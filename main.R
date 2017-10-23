@@ -126,12 +126,12 @@ res_rna_meth_anticorr <- fit.iDRWPClass(x=list(rnaseq, imputed_methyl),
 #                                     DEBUG=TRUE)
 
 # iDRW+DA :  RNA-seq + methylation profiles (features ranked by DA)
-da_weight_file <- "200_compressed_data.tsv"
-res_rna_meth_DA <- fit.iDRW_DA(y=list(good_samples, poor_samples),
-                               profile_name = list("rna", "meth"),
-                               datapath = datapath, pranking = "DA", 
-                               da_weight_file = da_weight_file,
-                               iter=10, DEBUG = TRUE)
+# da_weight_file <- "200_compressed_data.tsv"
+# res_rna_meth_DA <- fit.iDRW_DA(y=list(good_samples, poor_samples),
+#                                profile_name = list("rna", "meth"),
+#                                datapath = datapath, pranking = "DA", 
+#                                da_weight_file = da_weight_file,
+#                                iter=10, DEBUG = TRUE)
 
 #-------- comparable methods
 # means / medians of the expression values of the significant pathway member genes

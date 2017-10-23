@@ -66,7 +66,12 @@ read_data <- function(year, datapath){
   tail(md.pattern(methyl)) # 5134 missing values
   
   # fill missing values with median imputation
-  imputed_methyl <- impute_median(methyl)
+  imputed_methyl <- data.frame(lapply(X=imputed_methyl,
+                                      FUN=function(x) {
+                                        if(is.numeric(x)) 
+                                          ifelse(is.na(x),median(x,na.rm=T),x) 
+                                        else x}))
+  
   row.names(imputed_methyl) <- rownames(methyl)
   
   tail(md.pattern(imputed_methyl))
@@ -79,9 +84,4 @@ read_data <- function(year, datapath){
   # save as RData
   save(rnaseq, imputed_methyl, gene_name_id_map, clinical, samples, good_samples, poor_samples, file = file.path(datapath, 'data.RData'))
   
-}
-
-impute_median <- function(x) {
-  if(is.numeric(x)) return(data.frame(ifelse(is.na(x),median(x,na.rm=T),x)))
-  else return(data.frame(x))
 }
