@@ -5,6 +5,8 @@ library(samr)
 sapply(file.path("utils",list.files("utils", pattern="*.R")),source)
 
 year <- 3
+gene_delim <- c('g', 'm')
+
 # make data directory
 datapath <- file.path('data')
 if(!dir.exists(datapath)) dir.create(datapath)
@@ -27,8 +29,12 @@ V(g)$name <- paste("g",V(g)$name,sep="")
 m <- directGraph
 V(m)$name <-paste("m",V(m)$name,sep="")
 
+r <- directGraph
+V(r)$name <-paste("r",V(r)$name,sep="")
+
 gm <- g %du% m
 
+gmr <- g %du% m %du% r
 
 #-------- DRW-based pathway profile on a single type of feature data
 # RNA-seq pathway profile
@@ -58,6 +64,20 @@ res_meth <- fit.iDRWPClass(x=list(imputed_methyl),
                           pranking = "t-test",
                           iter = 10,
                           DEBUG=TRUE)
+
+# # RPPA pathway profile
+# res_rppa <- fit.iDRWPClass(x=list(imputed_rppa), 
+#                            y=list(good_samples, poor_samples),
+#                            testStatistic=list("t-test"),
+#                            profile_name = list("rppa"),
+#                            globalGraph=r, 
+#                            year = year, datapath = datapath,
+#                            pathSet=pathSet,
+#                            method = "DRW",
+#                            samples = samples,
+#                            pranking = "t-test",
+#                            iter = 10,
+#                            DEBUG=TRUE)
 
 #-------- integrative DRW on combined feature data
 # iDRW : RNA-seq + methylation profiles (all overlapping genes)
@@ -90,7 +110,22 @@ res_rna_meth_anticorr <- fit.iDRWPClass(x=list(rnaseq, imputed_methyl),
                                AntiCorr=TRUE,
                                DEBUG=TRUE)
 
-# iDRW+DA : iDRW based pathway features ranked by DA
+# # iDRW : RNA-seq + methylation + RPPA profiles (all overlapping genes)
+# res_rna_meth_rppa <- fit.iDRWPClass(x=list(rnaseq, imputed_methyl, imputed_rppa), 
+#                                     y=list(good_samples, poor_samples),
+#                                     testStatistic=list("DESeq2", "t-test", "t-test"),
+#                                     profile_name = list("rna", "meth", "rppa"),
+#                                     globalGraph=gmr, 
+#                                     year = year, datapath = datapath,
+#                                     pathSet=pathSet,
+#                                     method = "DRW",
+#                                     samples = samples,
+#                                     pranking = "t-test",
+#                                     iter = 10,
+#                                     AntiCorr=FALSE,
+#                                     DEBUG=TRUE)
+
+# iDRW+DA :  RNA-seq + methylation profiles (features ranked by DA)
 da_weight_file <- "200_compressed_data.tsv"
 res_rna_meth_DA <- fit.iDRW_DA(y=list(good_samples, poor_samples),
                                profile_name = list("rna", "meth"),
