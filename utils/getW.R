@@ -10,14 +10,15 @@ getW <- function(G, gene_weight, x, datapath, EdgeWeight=FALSE, AntiCorr=FALSE) 
     
     if(!EdgeWeight) {
       if(!AntiCorr) {
-        
         # assign bi-directional edges to all overlapping genes between exp & meth
         fname <- file.path(graphpath, "W_all_overlapping_edges.RData") # 88440 edges
         if(file.exists(fname)) {
           load(fname)
         } else {
+          print('file not exist!')
           W <- as.matrix(get.adjacency(G))
-          
+          print(sum(W))
+          print(length(intersect_genes))
           for(i in 1:length(intersect_genes)){
             idx=which(paste("g",intersect_genes[i],sep="")==rownames(W))
             if(length(idx)>0) {
