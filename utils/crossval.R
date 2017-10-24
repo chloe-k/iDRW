@@ -1,4 +1,4 @@
-crossval <- function(pathActivity, stats_pathway, y, sigGenes=NULL,
+crossval <- function(profile, stats_profile, y, sigGenes=NULL,
                      classifier = "Logistic", iter=1, nFolds=5, numTops=50, DEBUG=FALSE, fname) {
   
   AUC <- 0
@@ -21,8 +21,8 @@ crossval <- function(pathActivity, stats_pathway, y, sigGenes=NULL,
       y2.test <- sample(y2, floor(length(y2) / nFolds))
       y2.training <- setdiff(y2, y2.test)
       
-      pA.training <- pathActivity[,c(y1.training, y2.training)]
-      pA.test <- pathActivity[,c(y1.test, y2.test)]
+      pA.training <- profile[,c(y1.training, y2.training)]
+      pA.test <- profile[,c(y1.test, y2.test)]
       
       y1.training  <- 1:length(y1.training)
       y2.training <- (1+length(y1.training)):(length(y1.training)+length(y2.training))
@@ -39,27 +39,27 @@ crossval <- function(pathActivity, stats_pathway, y, sigGenes=NULL,
       classType_test[y2.test] <- "class2"
       arffRW_test <- data.frame(t(pA.test), "class" = classType_test, check.names=F)
       
-      resPredict <- fitModelGreedy(arffRW_training, arffRW_test, stats_pathway, classifier = classifier, numTops=numTops)
+      resPredict <- fitModelGreedy(arffRW_training, arffRW_test, stats_profile, classifier = classifier, numTops=numTops)
       if(DEBUG){
         print(list(model=resPredict$model, AUC=resPredict$AUC, 
-                   pathFeatures = resPredict$pathFeatures, geneFeatures = sigGenes[resPredict$pathFeatures]))
+                   sigFeatures = resPredict$sigFeatures, geneFeatures = sigGenes[resPredict$sigFeatures]))
       }
       
       AUC <- resPredict$AUC
       Accuracy <- resPredict$Accuracy
       fit <- list(model=resPredict$model, AUC=resPredict$AUC, Accuracy=resPredict$Accuracy, 
-                  pathFeatures = resPredict$pathFeatures, geneFeatures = sigGenes[resPredict$pathFeatures])
+                  sigFeatures = resPredict$sigFeatures, geneFeatures = sigGenes[resPredict$sigFeatures])
       
       perfAUC <- c(perfAUC, AUC)
       perfAcc <- c(perfAcc, Accuracy)
-      perfFeatures <- list(perfFeatures, sigGenes[resPredict$pathFeatures])
+      perfFeatures <- list(perfFeatures, sigGenes[resPredict$sigFeatures])
       
       if(resPredict$AUC > AUC){
         # print(i)
         AUC <- resPredict$AUC
         Accuracy <- resPredict$Accuracy
         fit <- list(model=resPredict$model, AUC=resPredict$AUC, Accuracy=resPredict$Accuracy, 
-                    pathFeatures = resPredict$pathFeatures, geneFeatures = sigGenes[resPredict$pathFeatures])
+                    sigFeatures = resPredict$sigFeatures, geneFeatures = sigGenes[resPredict$sigFeatures])
         
       }else{
         if(resPredict$AUC == AUC & resPredict$Accuracy > Accuracy){
@@ -67,7 +67,7 @@ crossval <- function(pathActivity, stats_pathway, y, sigGenes=NULL,
           AUC <- resPredict$AUC
           Accuracy <- resPredict$Accuracy
           fit <- list(model=resPredict$model, AUC=resPredict$AUC, Accuracy=resPredict$Accuracy, 
-                      pathFeatures = resPredict$pathFeatures, geneFeatures = sigGenes[resPredict$pathFeatures])
+                      sigFeatures = resPredict$sigFeatures, geneFeatures = sigGenes[resPredict$sigFeatures])
           
         }
       }

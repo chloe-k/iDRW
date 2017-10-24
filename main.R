@@ -22,8 +22,8 @@ load(file.path(datapath, "directGraph.rda"))
 # Set of pathways provided in DRWPClassGM
 load(file.path(datapath, "pathSet.rda"))
 
-# concat directed pathway graphs within each profile
-g <- directGraph # directed pathway graph provided in DRWPClass
+# directed pathway graph provided in DRWPClass
+g <- directGraph 
 V(g)$name <- paste("g",V(g)$name,sep="")
 
 m <- directGraph
@@ -32,143 +32,69 @@ V(m)$name <-paste("m",V(m)$name,sep="")
 r <- directGraph
 V(r)$name <-paste("r",V(r)$name,sep="")
 
-gm <- g %du% m
-
-gmr <- g %du% m %du% r
+y=list(good_samples, poor_samples)
 
 #-------- DRW-based pathway profile on a single type of feature data
 # RNA-seq pathway profile
-res_rna <- fit.iDRWPClass(x=list(rnaseq), 
-                       y=list(good_samples, poor_samples),
-                       testStatistic=list("DESeq2"),
-                       profile_name = list("rna"),
-                       globalGraph=g, 
-                       year = year, datapath = datapath,
-                       pathSet=pathSet,
-                       method = "DRW",
-                       samples = samples,
-                       pranking = "t-test",
-                       iter = 10,
-                       DEBUG=TRUE)
+res_rna <- fit.iDRWPClass(x=list(rnaseq), y=y, globalGraph=g,
+                          testStatistic= c('DESeq2'), profile_name = c('rna'),
+                          datapath = datapath, pathSet=pathSet,
+                          method = "DRW", samples = samples, pranking = "t-test",
+                          iter = 10, DEBUG=TRUE)
 
 # Methylation pathway profile
-res_meth <- fit.iDRWPClass(x=list(imputed_methyl), 
-                          y=list(good_samples, poor_samples),
-                          testStatistic=list("t-test"),
-                          profile_name = list("meth"),
-                          globalGraph=m, 
-                          year = year, datapath = datapath,
-                          pathSet=pathSet,
-                          method = "DRW",
-                          samples = samples,
-                          pranking = "t-test",
-                          iter = 10,
-                          DEBUG=TRUE)
-
-# # RPPA pathway profile
-# res_rppa <- fit.iDRWPClass(x=list(imputed_rppa), 
-#                            y=list(good_samples, poor_samples),
-#                            testStatistic=list("t-test"),
-#                            profile_name = list("rppa"),
-#                            globalGraph=r, 
-#                            year = year, datapath = datapath,
-#                            pathSet=pathSet,
-#                            method = "DRW",
-#                            samples = samples,
-#                            pranking = "t-test",
-#                            iter = 10,
-#                            DEBUG=TRUE)
+res_meth <- fit.iDRWPClass(x=list(imputed_methyl), y=y, globalGraph=m,
+                          testStatistic= c('t-test'), profile_name = c('meth'),
+                          datapath = datapath, pathSet=pathSet,
+                          method = "DRW", samples = samples, pranking = "t-test",
+                          iter = 10, DEBUG=TRUE)
 
 #-------- integrative DRW on combined feature data
+# concat directed pathway graphs within each profile
+gm <- g %du% m
+gmr <- g %du% m %du% r
+
+testStatistic <- c("DESeq2", "t-test")
+profile_name <- c("rna", "meth")
+
+x=list(rnaseq, imputed_methyl) 
+
 # iDRW : RNA-seq + methylation profiles (all overlapping genes)
-res_rna_meth <- fit.iDRWPClass(x=list(rnaseq, imputed_methyl), 
-                           y=list(good_samples, poor_samples),
-                           testStatistic=list("DESeq2", "t-test"),
-                           profile_name = list("rna", "meth"),
-                           globalGraph=gm, 
-                           year = year, datapath = datapath,
-                           pathSet=pathSet,
-                           method = "DRW",
-                           samples = samples,
-                           pranking = "t-test",
-                           iter = 10,
-                           AntiCorr=FALSE,
-                           DEBUG=TRUE)
+res_rna_meth <- fit.iDRWPClass(x=x, y=y, globalGraph=gm,
+                           testStatistic= testStatistic, profile_name = profile_name,
+                           datapath = datapath, pathSet=pathSet,
+                           method = "DRW", samples = samples, pranking = "t-test",
+                           iter = 10, AntiCorr=FALSE, DEBUG=TRUE)
 
 # iDRW-anti : RNA-seq + methylation profiles (anti-correlated genes)
-res_rna_meth_anticorr <- fit.iDRWPClass(x=list(rnaseq, imputed_methyl), 
-                               y=list(good_samples, poor_samples),
-                               testStatistic=list("DESeq2", "t-test"),
-                               profile_name = list("rna", "meth"),
-                               globalGraph=gm, 
-                               year = year, datapath = datapath,
-                               pathSet=pathSet,
-                               method = "DRW",
-                               samples = samples,
-                               pranking = "t-test",
-                               iter = 10,
-                               AntiCorr=TRUE,
-                               DEBUG=TRUE)
-
-# # iDRW : RNA-seq + methylation + RPPA profiles (all overlapping genes)
-# res_rna_meth_rppa <- fit.iDRWPClass(x=list(rnaseq, imputed_methyl, imputed_rppa), 
-#                                     y=list(good_samples, poor_samples),
-#                                     testStatistic=list("DESeq2", "t-test", "t-test"),
-#                                     profile_name = list("rna", "meth", "rppa"),
-#                                     globalGraph=gmr, 
-#                                     year = year, datapath = datapath,
-#                                     pathSet=pathSet,
-#                                     method = "DRW",
-#                                     samples = samples,
-#                                     pranking = "t-test",
-#                                     iter = 10,
-#                                     AntiCorr=FALSE,
-#                                     DEBUG=TRUE)
+res_rna_meth_anticorr <- fit.iDRWPClass(x=x, y=y, globalGraph=gm,
+                                        testStatistic= testStatistic, profile_name = profile_name,
+                                        datapath = datapath, pathSet=pathSet,
+                                        method = "DRW", samples = samples, pranking = "t-test",
+                                        iter = 10, AntiCorr=TRUE, DEBUG=TRUE)
 
 # iDRW+DA :  RNA-seq + methylation profiles (features ranked by DA)
 # da_weight_file <- "200_compressed_data.tsv"
-# res_rna_meth_DA <- fit.iDRW_DA(y=list(good_samples, poor_samples),
-#                                profile_name = list("rna", "meth"),
+# res_rna_meth_DA <- fit.iDRW_DA(y=y, profile_name = profile_name,
 #                                datapath = datapath, pranking = "DA", 
 #                                da_weight_file = da_weight_file,
 #                                iter=10, DEBUG = TRUE)
 
 #-------- comparable methods
 # means / medians of the expression values of the significant pathway member genes
-res_rna_meth_mean <- fit.iDRWPClass(x=list(rnaseq, imputed_methyl), 
-                                    y=list(good_samples, poor_samples),
-                                    testStatistic=list("DESeq2", "t-test"),
-                                    profile_name = list("rna", "meth"),
-                                    globalGraph=gm, 
-                                    year = year, datapath = datapath,
-                                    pathSet=pathSet,
-                                    method = "mean",
-                                    samples = samples,
-                                    pranking = "t-test",
-                                    iter = 10,
-                                    AntiCorr=FALSE,
-                                    DEBUG=TRUE)
-  
-res_rna_meth_median <- fit.iDRWPClass(x=list(rnaseq, imputed_methyl), 
-                                    y=list(good_samples, poor_samples),
-                                    testStatistic=list("DESeq2", "t-test"),
-                                    profile_name = list("rna", "meth"),
-                                    globalGraph=gm, 
-                                    year = year, datapath = datapath,
-                                    pathSet=pathSet,
-                                    method = "median",
-                                    samples = samples,
-                                    pranking = "t-test",
-                                    iter = 10,
-                                    AntiCorr=FALSE,
-                                    DEBUG=TRUE)
+res_rna_meth_mean <- fit.iDRWPClass(x=x, y=y, testStatistic= testStatistic, profile_name = profile_name,
+                                    datapath = datapath, pathSet=pathSet,
+                                    method = "mean", samples = samples, pranking = "t-test",
+                                    iter = 10, AntiCorr=FALSE, DEBUG=TRUE)
+
+res_rna_meth_median <- fit.iDRWPClass(x=x, y=y, testStatistic= testStatistic, profile_name = profile_name,
+                                      datapath = datapath, pathSet=pathSet,
+                                      method = "median", samples = samples, pranking = "t-test",
+                                      iter = 10, AntiCorr=FALSE, DEBUG=TRUE)
 
 # DRW-concat : concat each pathway profile obtained from DRW
-res_rna_meth_concat <- fit.iDRWconcat(y=list(good_samples, poor_samples),
-                                          profile_name = list("rna", "meth"),
-                                          datapath = datapath,
-                                          gene_delim = list("g", "m"),
-                                          iter = 10)
+res_rna_meth_concat <- fit.iDRWconcat(y=y, profile_name = profile_name,
+                                      datapath = datapath, gene_delim = gene_delim, iter = 10)
 
 # PAC (Pathway Activities Classification) 
 # source('run.pac.R')
@@ -176,33 +102,39 @@ res_rna_meth_concat <- fit.iDRWconcat(y=list(good_samples, poor_samples),
 #                             xM=imputed_methyl,
 #                             y=samples)
 
-#-------------------------------
-# gene profile on a single type of feature data
-source('baseline_geneProfile.R')
-baseline_geneProfile(x=list(rnaseq, imputed_methyl), 
-                     y=list(good_samples, poor_samples),
-                     numTops = 50, numFeats = 279, iter = 10, datapath = datapath)
+#-------- gene profile on a single type of feature data
+numFeats = 279
+profile_name <- c('gf_rna', 'gf_meth')
+intersect_genes <- intersect(substring(rownames(rnaseq),2), substring(rownames(imputed_methyl),2))
+set.seed(1)
+Feats <- intersect_genes[sample(c(1:length(intersect_genes)), numFeats)]
 
-load(paste('Data/res_models_gf.DESeq2.',year,'y.iter10.RData',sep=""))
+# RNA-seq gene profile
+res_gf_rna <- fit.GM(x=list(rnaseq), y=y, testStatistic= c('DESeq2'), profile_name = c('gf_rna'),
+                     feats = Feats, gene_delim = c('g'), datapath=datapath, iter=10)
 
+# Methylation gene profile
+res_gf_meth <- fit.GM(x=list(imputed_methyl), y=y, testStatistic= c('t-test'), profile_name = c('gf_meth'),
+                      feats = Feats, gene_delim = c('m'), datapath=datapath, iter=10)
+
+# concat RNA-seq + Methylation gene profile 
+res_gf_rna_meth <- fit.GM(x=x, y=y, testStatistic= testStatistic, profile_name = profile_name,
+                          feats = Feats, gene_delim = gene_delim, datapath=datapath, iter=10)
+
+
+#-------- save and write result
 # save all models
-save(res_rna, res_meth, res_rna_meth, 
+save(res_rna, res_meth, res_rna_meth, res_rna_meth_anticorr, res_rna_meth_DA,
      res_rna_meth_concat, res_rna_meth_mean, res_rna_meth_median, 
-     res_rna_meth_anticorr, res_rna_meth_SDAE,
-     file=paste('Data/res_models.DESeq2.',year,'y.iter10.RData',sep=""))
+     res_gf_rna, res_gf_meth, res_gf_rna_meth,
+     file=file.path(datapath,'res_models.RData'))
 
-#source('barplot.R')
+# write 5-fold cross validation AUC / Accuracy
+res_AUC <- data.frame(Methyl=res_gf_meth[[2]], RNAseq=res_gf_rna[[2]],
+                      Methyl_DRW=res_meth[[2]], RNAseq_DRW=res_rna[[2]])
 
-#--------- write 5-fold cross validation AUC / Accuracy ---------
-res_AUC <- data.frame(Methyl=res_gf_methyl[[2]],
-                      RNAseq=res_gf_rnaseq[[2]],
-                      Methyl_DRW=res_meth[[2]],
-                      RNAseq_DRW=res_rna[[2]])
-
-res_Accuracy <- data.frame(Methyl=res_gf_methyl[[3]],
-                           RNAseq=res_gf_rnaseq[[3]],
-                           Methyl_DRW=res_meth[[3]],
-                           RNAseq_DRW=res_rna[[3]])
+res_Accuracy <- data.frame(Methyl=res_gf_meth[[3]], RNAseq=res_gf_rna[[3]],
+                           Methyl_DRW=res_meth[[3]], RNAseq_DRW=res_rna[[3]])
 
 write.table(t(res_AUC), file = paste(datapath,'result_DRW_AUC',pathend,sep=""), quote = F, col.names=F)
 write.table(t(res_Accuracy), file = paste(datapath,'result_DRW_Accuracy',pathend,sep=""), quote = F, col.names=F)

@@ -19,6 +19,6 @@ fit.iDRW_DA <- function(y, profile_name, datapath, pranking, da_weight_file,
   desc <- c(profile_name, method, "da", if(AntiCorr) "anticorr", "txt")
   fname_res <- file.path(respath, paste(c("result", desc), collapse = '.'))
   
-  return(crossval(pathActivity=pA$pathActivity, stats_pathway=pathway_rank, y=y, sigGenes=pA$sigGenes,
+  return(crossval(profile = pA$pathActivity, stats_profile = pathway_rank, y=y, sigGenes=pA$sigGenes,
                   classifier=classifier, iter=iter, nFolds=nFolds, numTops=numTops, DEBUG = DEBUG, fname = fname_res))
 }

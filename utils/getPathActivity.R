@@ -89,7 +89,7 @@ function(x, pathSet, w, vertexZP, method = "DRW", fname, rows){
 	colnames(pathActivity) <- colnames(x)
 	
 	# save pathway profile 
-	write.table(x=t(pathActivity), file=fname, sep="\t", row.names=samples, col.names=T)
+	write.table(x=t(pathActivity), file=fname, sep="\t", row.names=rows, col.names=T)
 	
 	return(list(pathActivity=pathActivity, sigGenes=sigGenes))	
 }

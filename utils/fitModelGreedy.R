@@ -29,5 +29,5 @@ function(expr_training, expr_test, TValue, classifier = "Logistic", numTops = 50
 			AUC <- AUCTmp
 		}
 	}
-	return(list(model=res.fitModel, AUC=AUC, Accuracy=Accuracy, pathFeatures=names(TValue)[flag]))
+	return(list(model=res.fitModel, AUC=AUC, Accuracy=Accuracy, sigFeatures=names(TValue)[flag]))
 }

@@ -1,11 +1,8 @@
 fit.iDRWPClass <-
-function(x, y, testStatistic, profile_name,
-         globalGraph, year, datapath, pathSet,
+function(x, y, testStatistic, profile_name, globalGraph = NULL, datapath, pathSet,
          method = "DRW", samples, pranking = "t-test",
-         classifier = "Logistic", 
-         nFolds = 5, numTops=50, 
-         iter = 1, Gamma=0.7, AntiCorr = FALSE,
-         DEBUG=FALSE) {
+         classifier = "Logistic", nFolds = 5, numTops=50, 
+         iter = 1, Gamma=0.7, AntiCorr = FALSE, DEBUG=FALSE) {
   
   x_norm <- list(0)
   x_stats <- list(0)
@@ -17,7 +14,7 @@ function(x, y, testStatistic, profile_name,
     
     # statistics for genes
     x_stats[[i]] <- get.genes.stats(x=x[[i]], x_norm=x_norm[[i]], y=y, 
-                              DEBUG=DEBUG, testStatistic=testStatistic[[i]], pname=profile_name[[i]], datapath=datapath)
+                              DEBUG=DEBUG, testStatistic=testStatistic[i], pname=profile_name[i], datapath=datapath)
     # initialize gene weights
     geneWeight <- -log(x_stats[[i]][,2]+2.2e-16)
     geneWeight[which(is.na(geneWeight))] <- 0
@@ -67,7 +64,7 @@ function(x, y, testStatistic, profile_name,
   
   fname_res <- file.path(respath, paste(c("result", desc), collapse = '.'))
 	
-  return(crossval(pathActivity=pA$pathActivity, stats_pathway=stats_pathway, y=y, sigGenes=pA$sigGenes,
+  return(crossval(profile=pA$pathActivity, stats_profile=stats_pathway, y=y, sigGenes=pA$sigGenes,
            classifier=classifier, iter=iter, nFolds=nFolds, numTops=numTops, DEBUG = DEBUG, fname = fname_res))
   
 }

@@ -35,6 +35,6 @@ fit.iDRWconcat <- function(y, profile_name, datapath, gene_delim,
   desc <- c(profile_name, method, "concat", if(AntiCorr) "anticorr", "txt")
   fname_res <- file.path(respath, paste(c("result", desc), collapse = '.'))
   
-  return(crossval(pathActivity=t(cpathway_profile), stats_pathway=cpathway_rank, y=y,
+  return(crossval(profile=t(cpathway_profile), stats_profile = cpathway_rank, y=y,
                   classifier=classifier, iter=iter, nFolds=nFolds, numTops=numTops, DEBUG = DEBUG, fname = fname_res))
 }
