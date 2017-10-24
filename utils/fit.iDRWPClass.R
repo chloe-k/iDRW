@@ -28,11 +28,11 @@ function(x, y, testStatistic, profile_name,
   if(method == "DRW") {
     # assign initial weights to the pathway graph
     W0 <- getW0(gene_weight, globalGraph)
-    
+
     if(DEBUG) cat('Performing directed random walk...')
     # get adjacency matrix of the (integrated) gene-gene graph
     W = getW(G = globalGraph, gene_weight = gene_weight, x = x_norm, datapath = datapath, EdgeWeight=FALSE, AntiCorr=AntiCorr)
-    
+
     # perform DRW on gene-gene graph
     vertexWeight <- DRW(W = W, p0 = W0, gamma = Gamma)
     names(vertexWeight) <- names(W0)

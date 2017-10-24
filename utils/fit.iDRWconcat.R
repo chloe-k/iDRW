@@ -8,14 +8,14 @@ fit.iDRWconcat <- function(y, profile_name, datapath, gene_delim,
   
   for (i in 1:length(profile_name)) {
     # read pathway profile
-    desc <- c(profile_name[[i]], method, if(AntiCorr) "anticorr", "RData")
+    desc <- c(profile_name[[i]], method, if(AntiCorr) "anticorr", "txt")
     fname_profile = file.path(datapath, paste(c("pathway_profile", desc), collapse = '.'))
     
     path_activity[[i]] <- read.table(fname_profile, header=T, check.names = F)
     names(path_activity[[i]]) <- paste(gene_delim[[i]], colnames(path_activity[[i]]), sep="")
     
     # read pathway rank
-    fname_rank = file.path(datapath, paste(c("pathway_rank", desc), collapse = '.'))
+    fname_rank = file.path(datapath, paste(c("pathway_rank", "t-test", desc), collapse = '.'))
     
     path_rank[[i]] <- as.data.frame(read.table(file = fname_rank, check.names = F))
     names(path_rank[[i]]) <- paste(gene_delim[[i]], colnames(path_rank[[i]]), sep="")

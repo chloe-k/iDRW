@@ -1,0 +1,4483 @@
+iter.................................. 1 
+iter= 1 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.5838
+g04920       -1.1365
+g04010          0.03
+g04910        0.0453
+g04510       -0.2528
+g05211       -1.1453
+g04726       -0.5516
+g05203        0.5819
+g05410       -0.8611
+g05218        1.5847
+g04340       -0.4628
+g04330       -0.8544
+g04144        0.4121
+Intercept    -0.1289
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.5578
+g04920        0.3209
+g04010        1.0305
+g04910        1.0463
+g04510        0.7766
+g05211        0.3181
+g04726         0.576
+g05203        1.7894
+g05410        0.4227
+g05218         4.878
+g04340        0.6295
+g04330        0.4255
+g04144        1.5099
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          68               73.913  %
+Incorrectly Classified Instances        24               26.087  %
+Kappa statistic                          0.4745
+Mean absolute error                      0.3824
+Root mean squared error                  0.4252
+Relative absolute error                 76.8057 %
+Root relative squared error             85.2286 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.698    0.224    0.732      0.698    0.714      0.475    0.829     0.783     class1
+                 0.776    0.302    0.745      0.776    0.760      0.475    0.829     0.848     class2
+Weighted Avg.    0.739    0.266    0.739      0.739    0.739      0.475    0.829     0.818     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 30 13 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.829
+
+$pathFeatures
+ [1] "g05200" "g04920" "g04010" "g04910" "g04510" "g05211" "g04726" "g05203" "g05410" "g05218" "g04340" "g04330" "g04144"
+
+$geneFeatures
+NULL
+
+iter= 1 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.4016
+g04360       -1.1397
+g04920       -1.1111
+g04510       -0.2285
+g05211       -1.2184
+g04151       -0.3263
+g04722          0.08
+g04350       -1.4263
+g04810        0.8329
+g04310        0.8564
+g04621        0.7241
+g04066        1.3803
+g04340        0.1358
+g04270       -0.1787
+g05120       -1.1763
+g04530       -0.2403
+g04144        0.5596
+g05217       -1.3116
+g05110       -1.2755
+Intercept    -0.2208
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.6693
+g04360        0.3199
+g04920        0.3292
+g04510        0.7957
+g05211        0.2957
+g04151        0.7216
+g04722        1.0833
+g04350        0.2402
+g04810           2.3
+g04310        2.3547
+g04621        2.0629
+g04066         3.976
+g04340        1.1455
+g04270        0.8363
+g05120        0.3084
+g04530        0.7864
+g04144        1.7499
+g05217        0.2694
+g05110        0.2793
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          65               70.6522 %
+Incorrectly Classified Instances        27               29.3478 %
+Kappa statistic                          0.408 
+Mean absolute error                      0.3933
+Root mean squared error                  0.4355
+Relative absolute error                 78.9828 %
+Root relative squared error             87.29   %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.651    0.245    0.700      0.651    0.675      0.409    0.781     0.758     class1
+                 0.755    0.349    0.712      0.755    0.733      0.409    0.781     0.822     class2
+Weighted Avg.    0.707    0.300    0.706      0.707    0.706      0.409    0.781     0.792     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28 15 |  a = class1
+ 12 37 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.781
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g04510" "g05211" "g04151" "g04722" "g04350" "g04810" "g04310" "g04621" "g04066" "g04340" "g04270" "g05120"
+[16] "g04530" "g04144" "g05217" "g05110"
+
+$geneFeatures
+NULL
+
+iter= 1 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.3499
+g04920       -0.7905
+g04010       -0.4845
+g05160       -0.0972
+g05146        0.9574
+g04145       -1.3861
+g04726       -0.8591
+g04916        0.6979
+g04722        0.3069
+g05412       -2.6512
+g04810        0.8412
+g04622         -0.21
+g04310        2.9849
+g05410        1.6233
+g05161       -0.1154
+g04340       -2.7863
+g04270       -0.6385
+g04330       -1.0474
+g04530       -0.3474
+Intercept    -0.1742
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.2593
+g04920        0.4536
+g04010         0.616
+g05160        0.9074
+g05146         2.605
+g04145          0.25
+g04726        0.4236
+g04916        2.0094
+g04722        1.3592
+g05412        0.0706
+g04810        2.3192
+g04622        0.8106
+g04310       19.7845
+g05410        5.0699
+g05161         0.891
+g04340        0.0617
+g04270        0.5281
+g04330        0.3509
+g04530        0.7065
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          67               72.8261 %
+Incorrectly Classified Instances        25               27.1739 %
+Kappa statistic                          0.4534
+Mean absolute error                      0.3917
+Root mean squared error                  0.4306
+Relative absolute error                 78.6591 %
+Root relative squared error             86.3089 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.698    0.245    0.714      0.698    0.706      0.454    0.820     0.756     class1
+                 0.755    0.302    0.740      0.755    0.747      0.454    0.820     0.873     class2
+Weighted Avg.    0.728    0.275    0.728      0.728    0.728      0.454    0.820     0.819     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 30 13 |  a = class1
+ 12 37 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.82
+
+$pathFeatures
+ [1] "g05200" "g04920" "g04010" "g05160" "g05146" "g04145" "g04726" "g04916" "g04722" "g05412" "g04810" "g04622" "g04310" "g05410" "g05161"
+[16] "g04340" "g04270" "g04330" "g04530"
+
+$geneFeatures
+NULL
+
+iter= 1 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200          -0.7
+g04360       -0.8875
+g04920       -0.6663
+g04010       -0.4809
+g04145       -0.6659
+g04722        0.3868
+g04914       -2.3689
+g05203        2.5112
+g04622       -0.3217
+g04621        0.0748
+g05410       -0.3476
+g04540        0.1195
+g04330       -0.8598
+g05120        0.0775
+g05032        0.2221
+g04120       -0.0768
+Intercept    -0.1265
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.4966
+g04360        0.4117
+g04920        0.5136
+g04010        0.6182
+g04145        0.5138
+g04722        1.4723
+g04914        0.0936
+g05203       12.3191
+g04622        0.7249
+g04621        1.0777
+g05410        0.7064
+g04540        1.1269
+g04330        0.4232
+g05120        1.0806
+g05032        1.2487
+g04120         0.926
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          61               66.3043 %
+Incorrectly Classified Instances        31               33.6957 %
+Kappa statistic                          0.3164
+Mean absolute error                      0.3967
+Root mean squared error                  0.4415
+Relative absolute error                 79.6654 %
+Root relative squared error             88.4863 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.558    0.245    0.667      0.558    0.608      0.320    0.771     0.766     class1
+                 0.755    0.442    0.661      0.755    0.705      0.320    0.771     0.796     class2
+Weighted Avg.    0.663    0.350    0.663      0.663    0.659      0.320    0.771     0.782     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 24 19 |  a = class1
+ 12 37 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.771
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g04010" "g04145" "g04722" "g04914" "g05203" "g04622" "g04621" "g05410" "g04540" "g04330" "g05120" "g05032"
+[16] "g04120"
+
+$geneFeatures
+NULL
+
+iter= 1 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.8694
+g04010       -0.8853
+g05146       -0.3339
+g04726       -1.5197
+g04722       -0.0635
+g04350       -1.5849
+g04914        -0.857
+g04115        0.0844
+g04810        1.0939
+g04066       -0.1204
+g05161        0.6395
+g04340        1.0737
+g05032        1.0692
+g04120       -0.3072
+g05217       -1.3183
+g05166        0.3313
+g05110        0.2601
+Intercept    -0.1614
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.4192
+g04010        0.4126
+g05146        0.7161
+g04726        0.2188
+g04722        0.9385
+g04350         0.205
+g04914        0.4244
+g04115        1.0881
+g04810         2.986
+g04066        0.8866
+g05161        1.8956
+g04340        2.9262
+g05032         2.913
+g04120        0.7355
+g05217        0.2676
+g05166        1.3927
+g05110        1.2971
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          74               80.4348 %
+Incorrectly Classified Instances        18               19.5652 %
+Kappa statistic                          0.6115
+Mean absolute error                      0.3773
+Root mean squared error                  0.4124
+Relative absolute error                 75.7809 %
+Root relative squared error             82.6593 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.884    0.265    0.745      0.884    0.809      0.621    0.865     0.835     class1
+                 0.735    0.116    0.878      0.735    0.800      0.621    0.865     0.892     class2
+Weighted Avg.    0.804    0.186    0.816      0.804    0.804      0.621    0.865     0.865     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 38  5 |  a = class1
+ 13 36 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.865
+
+$pathFeatures
+ [1] "g05200" "g04010" "g05146" "g04726" "g04722" "g04350" "g04914" "g04115" "g04810" "g04066" "g05161" "g04340" "g05032" "g04120" "g05217"
+[16] "g05166" "g05110"
+
+$geneFeatures
+NULL
+
+iter.................................. 2 
+iter= 2 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.8076
+g04920       -0.4998
+g04010       -0.2389
+g05211       -0.4563
+g04726       -0.6742
+g04916       -0.0311
+g04722        0.0378
+g04350       -2.0521
+g05412       -0.7677
+g04810        1.5197
+g04330        -0.897
+g05034       -0.2895
+g04120       -0.9827
+g04530       -0.0868
+g04144        1.0162
+Intercept    -0.2055
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.4459
+g04920        0.6066
+g04010        0.7875
+g05211        0.6336
+g04726        0.5096
+g04916        0.9693
+g04722        1.0386
+g04350        0.1285
+g05412        0.4641
+g04810        4.5708
+g04330        0.4078
+g05034        0.7487
+g04120        0.3743
+g04530        0.9169
+g04144        2.7628
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          74               80.4348 %
+Incorrectly Classified Instances        18               19.5652 %
+Kappa statistic                          0.6059
+Mean absolute error                      0.3831
+Root mean squared error                  0.4306
+Relative absolute error                 76.9388 %
+Root relative squared error             86.3122 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.163    0.805      0.767    0.786      0.606    0.809     0.786     class1
+                 0.837    0.233    0.804      0.837    0.820      0.606    0.809     0.811     class2
+Weighted Avg.    0.804    0.200    0.804      0.804    0.804      0.606    0.809     0.799     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 33 10 |  a = class1
+  8 41 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.809
+
+$pathFeatures
+ [1] "g05200" "g04920" "g04010" "g05211" "g04726" "g04916" "g04722" "g04350" "g05412" "g04810" "g04330" "g05034" "g04120" "g04530" "g04144"
+
+$geneFeatures
+NULL
+
+iter= 2 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.7913
+g04360       -1.1429
+g04010       -0.4245
+g04722       -0.0791
+g04350       -1.6148
+g04914       -0.5681
+g05412       -1.2408
+g04810        1.5017
+g05410        0.7913
+g05120       -0.3939
+g04727       -0.1171
+g05164        0.1089
+Intercept    -0.1805
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.4532
+g04360        0.3189
+g04010        0.6541
+g04722         0.924
+g04350        0.1989
+g04914        0.5666
+g05412        0.2892
+g04810        4.4891
+g05410        2.2063
+g05120        0.6745
+g04727        0.8895
+g05164        1.1151
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          72               78.2609 %
+Incorrectly Classified Instances        20               21.7391 %
+Kappa statistic                          0.5621
+Mean absolute error                      0.3754
+Root mean squared error                  0.4226
+Relative absolute error                 75.3879 %
+Root relative squared error             84.6969 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.744    0.184    0.780      0.744    0.762      0.563    0.827     0.799     class1
+                 0.816    0.256    0.784      0.816    0.800      0.563    0.827     0.837     class2
+Weighted Avg.    0.783    0.222    0.783      0.783    0.782      0.563    0.827     0.819     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 32 11 |  a = class1
+  9 40 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.827
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04010" "g04722" "g04350" "g04914" "g05412" "g04810" "g05410" "g05120" "g04727" "g05164"
+
+$geneFeatures
+NULL
+
+iter= 2 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.4793
+g04360        -1.283
+g04920       -1.1135
+g00230       -0.9504
+g04910       -0.0698
+g04151        0.0669
+g04916        0.4983
+g04620       -0.9749
+g04810       -0.0559
+g05203        -0.016
+g05161        1.1619
+g05218        0.6627
+g04330       -0.8362
+g04144        0.8858
+g05217       -0.8296
+g05110       -1.1895
+Intercept    -0.1314
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.6192
+g04360        0.2772
+g04920        0.3284
+g00230        0.3866
+g04910        0.9326
+g04151        1.0692
+g04916        1.6459
+g04620        0.3772
+g04810        0.9456
+g05203        0.9841
+g05161        3.1961
+g05218          1.94
+g04330        0.4333
+g04144        2.4249
+g05217        0.4362
+g05110        0.3044
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          64               69.5652 %
+Incorrectly Classified Instances        28               30.4348 %
+Kappa statistic                          0.3852
+Mean absolute error                      0.406 
+Root mean squared error                  0.4451
+Relative absolute error                 81.5302 %
+Root relative squared error             89.2015 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.628    0.245    0.692      0.628    0.659      0.387    0.787     0.739     class1
+                 0.755    0.372    0.698      0.755    0.725      0.387    0.787     0.789     class2
+Weighted Avg.    0.696    0.313    0.695      0.696    0.694      0.387    0.787     0.766     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 27 16 |  a = class1
+ 12 37 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.787
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04910" "g04151" "g04916" "g04620" "g04810" "g05203" "g05161" "g05218" "g04330" "g04144" "g05217"
+[16] "g05110"
+
+$geneFeatures
+NULL
+
+iter= 2 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.5442
+g04360       -0.3339
+g00230       -0.6153
+g04010       -0.8519
+g04910       -0.3561
+g04510       -0.5454
+g05211       -1.3566
+g04145       -1.3735
+g04726       -1.3136
+g05412       -0.3465
+g04115        0.2181
+g04810        0.6508
+g05203       -0.2076
+g04066        0.7124
+g04540        1.0652
+g05218        0.9141
+g05221        0.3283
+g04330       -0.9655
+g05034        0.3409
+g05217       -1.2412
+g05166        1.0001
+Intercept    -0.1873
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.5803
+g04360        0.7161
+g00230        0.5405
+g04010        0.4266
+g04910        0.7004
+g04510        0.5796
+g05211        0.2575
+g04145        0.2532
+g04726        0.2688
+g05412        0.7071
+g04115        1.2437
+g04810         1.917
+g05203        0.8126
+g04066        2.0389
+g04540        2.9015
+g05218        2.4945
+g05221        1.3886
+g04330        0.3808
+g05034        1.4062
+g05217         0.289
+g05166        2.7185
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          71               77.1739 %
+Incorrectly Classified Instances        21               22.8261 %
+Kappa statistic                          0.5422
+Mean absolute error                      0.34  
+Root mean squared error                  0.3902
+Relative absolute error                 68.284  %
+Root relative squared error             78.2157 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.224    0.750      0.767    0.759      0.542    0.879     0.889     class1
+                 0.776    0.233    0.792      0.776    0.784      0.542    0.879     0.887     class2
+Weighted Avg.    0.772    0.229    0.772      0.772    0.772      0.542    0.879     0.888     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 33 10 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.879
+
+$pathFeatures
+ [1] "g05200" "g04360" "g00230" "g04010" "g04910" "g04510" "g05211" "g04145" "g04726" "g05412" "g04115" "g04810" "g05203" "g04066" "g04540"
+[16] "g05218" "g05221" "g04330" "g05034" "g05217" "g05166"
+
+$geneFeatures
+NULL
+
+iter= 2 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.2331
+g04920       -1.5446
+g00230       -0.6445
+g05211       -0.6877
+g04151       -0.0123
+g04350        -1.507
+g05412       -0.9362
+g04115        0.1548
+g04810        1.2101
+g05203        0.2271
+g04066        1.0794
+g04540       -0.6697
+g04330       -1.0794
+g05034       -0.4331
+g05414       -0.0645
+g04530       -0.2949
+g04144        1.0289
+Intercept    -0.2206
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.2914
+g04920        0.2134
+g00230        0.5249
+g05211        0.5027
+g04151        0.9878
+g04350        0.2216
+g05412        0.3921
+g04115        1.1674
+g04810        3.3539
+g05203        1.2549
+g04066        2.9431
+g04540        0.5119
+g04330        0.3398
+g05034        0.6485
+g05414        0.9376
+g04530        0.7446
+g04144         2.798
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          68               73.913  %
+Incorrectly Classified Instances        24               26.087  %
+Kappa statistic                          0.4775
+Mean absolute error                      0.369 
+Root mean squared error                  0.433 
+Relative absolute error                 74.1085 %
+Root relative squared error             86.7858 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.744    0.265    0.711      0.744    0.727      0.478    0.789     0.750     class1
+                 0.735    0.256    0.766      0.735    0.750      0.478    0.789     0.799     class2
+Weighted Avg.    0.739    0.260    0.740      0.739    0.739      0.478    0.789     0.776     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 32 11 |  a = class1
+ 13 36 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.789
+
+$pathFeatures
+ [1] "g05200" "g04920" "g00230" "g05211" "g04151" "g04350" "g05412" "g04115" "g04810" "g05203" "g04066" "g04540" "g04330" "g05034" "g05414"
+[16] "g04530" "g04144"
+
+$geneFeatures
+NULL
+
+iter.................................. 3 
+iter= 3 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.6865
+g00230       -0.7967
+g04010       -0.5429
+g04910       -0.4626
+g04510       -0.1163
+g04916         0.189
+g04722         0.402
+g05412       -0.5499
+g04810        0.8752
+g05203         0.035
+g04066        0.9379
+g05032        -0.106
+g04930        0.1873
+g05222       -0.3314
+g04728       -0.3657
+g05164        0.0283
+g05166           0.2
+Intercept     -0.219
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.1852
+g00230        0.4508
+g04010         0.581
+g04910        0.6296
+g04510        0.8902
+g04916        1.2081
+g04722        1.4949
+g05412         0.577
+g04810        2.3994
+g05203        1.0356
+g04066        2.5546
+g05032        0.8994
+g04930         1.206
+g05222        0.7179
+g04728        0.6937
+g05164        1.0287
+g05166        1.2214
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          68               73.913  %
+Incorrectly Classified Instances        24               26.087  %
+Kappa statistic                          0.4685
+Mean absolute error                      0.3971
+Root mean squared error                  0.4417
+Relative absolute error                 79.7613 %
+Root relative squared error             88.5325 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.605    0.143    0.788      0.605    0.684      0.480    0.802     0.720     class1
+                 0.857    0.395    0.712      0.857    0.778      0.480    0.802     0.833     class2
+Weighted Avg.    0.739    0.277    0.747      0.739    0.734      0.480    0.802     0.780     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 26 17 |  a = class1
+  7 42 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.802
+
+$pathFeatures
+ [1] "g05200" "g00230" "g04010" "g04910" "g04510" "g04916" "g04722" "g05412" "g04810" "g05203" "g04066" "g05032" "g04930" "g05222" "g04728"
+[16] "g05164" "g05166"
+
+$geneFeatures
+NULL
+
+iter= 3 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.4044
+g00230       -0.8101
+g04510         -0.08
+g05146        0.1914
+g05412       -0.9337
+g04810        1.6128
+g04622       -0.2349
+g04270       -0.6215
+g04330       -1.2831
+g05166        0.2701
+g05110        0.1149
+Intercept    -0.1124
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.2455
+g00230        0.4448
+g04510        0.9231
+g05146         1.211
+g05412        0.3931
+g04810         5.017
+g04622        0.7906
+g04270        0.5371
+g04330        0.2772
+g05166        1.3101
+g05110        1.1218
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          72               78.2609 %
+Incorrectly Classified Instances        20               21.7391 %
+Kappa statistic                          0.5634
+Mean absolute error                      0.3888
+Root mean squared error                  0.4305
+Relative absolute error                 78.0885 %
+Root relative squared error             86.2766 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.204    0.767      0.767    0.767      0.563    0.819     0.777     class1
+                 0.796    0.233    0.796      0.796    0.796      0.563    0.819     0.813     class2
+Weighted Avg.    0.783    0.219    0.783      0.783    0.783      0.563    0.819     0.796     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 33 10 |  a = class1
+ 10 39 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.819
+
+$pathFeatures
+ [1] "g05200" "g00230" "g04510" "g05146" "g05412" "g04810" "g04622" "g04270" "g04330" "g05166" "g05110"
+
+$geneFeatures
+NULL
+
+iter= 3 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200        -0.974
+g04360       -0.5292
+g04920       -1.0047
+g00230       -0.7155
+g05211        0.3079
+g05160        -0.217
+g04145       -0.3908
+g04722        0.1664
+g04350       -1.0744
+g05412       -0.9113
+g04810         0.788
+g05218        0.5542
+g05120       -0.0935
+Intercept    -0.1653
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3776
+g04360        0.5891
+g04920        0.3662
+g00230        0.4889
+g05211        1.3606
+g05160        0.8049
+g04145        0.6765
+g04722        1.1811
+g04350        0.3415
+g05412         0.402
+g04810         2.199
+g05218        1.7406
+g05120        0.9108
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          64               69.5652 %
+Incorrectly Classified Instances        28               30.4348 %
+Kappa statistic                          0.387 
+Mean absolute error                      0.3861
+Root mean squared error                  0.4426
+Relative absolute error                 77.5447 %
+Root relative squared error             88.7164 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.651    0.265    0.683      0.651    0.667      0.387    0.765     0.744     class1
+                 0.735    0.349    0.706      0.735    0.720      0.387    0.765     0.799     class2
+Weighted Avg.    0.696    0.310    0.695      0.696    0.695      0.387    0.765     0.774     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28 15 |  a = class1
+ 13 36 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.765
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g05211" "g05160" "g04145" "g04722" "g04350" "g05412" "g04810" "g05218" "g05120"
+
+$geneFeatures
+NULL
+
+iter= 3 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.5493
+g04360        -0.268
+g04920       -0.7609
+g00230       -0.7381
+g04910        0.0253
+g04510        0.2903
+g05412        -0.827
+g05203        0.5488
+g04622       -0.1138
+g04621       -0.1261
+g04270       -0.1921
+g04330       -0.6261
+g04120         0.056
+Intercept    -0.1167
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.5774
+g04360        0.7649
+g04920        0.4672
+g00230         0.478
+g04910        1.0256
+g04510        1.3369
+g05412        0.4374
+g05203        1.7312
+g04622        0.8924
+g04621        0.8815
+g04270        0.8252
+g04330        0.5347
+g04120        1.0576
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          67               72.8261 %
+Incorrectly Classified Instances        25               27.1739 %
+Kappa statistic                          0.455 
+Mean absolute error                      0.4041
+Root mean squared error                  0.4374
+Relative absolute error                 81.1538 %
+Root relative squared error             87.6692 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.721    0.265    0.705      0.721    0.713      0.455    0.785     0.766     class1
+                 0.735    0.279    0.750      0.735    0.742      0.455    0.785     0.819     class2
+Weighted Avg.    0.728    0.273    0.729      0.728    0.728      0.455    0.785     0.794     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 31 12 |  a = class1
+ 13 36 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.785
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04910" "g04510" "g05412" "g05203" "g04622" "g04621" "g04270" "g04330" "g04120"
+
+$geneFeatures
+NULL
+
+iter= 3 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.6715
+g04010        0.0563
+g05211       -0.5404
+g05146        0.6302
+g04726       -0.7599
+g05412       -1.0956
+g04810        0.9973
+g05203       -0.0415
+g04270       -0.6097
+g04330       -0.7046
+g04120       -0.8395
+g04728        0.1973
+g05215        0.9579
+g04144        0.6346
+g05217       -0.0453
+g05110        0.2407
+Intercept    -0.0929
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200         0.188
+g04010        1.0579
+g05211        0.5825
+g05146         1.878
+g04726        0.4677
+g05412        0.3343
+g04810         2.711
+g05203        0.9594
+g04270        0.5435
+g04330        0.4943
+g04120        0.4319
+g04728        1.2182
+g05215        2.6061
+g04144        1.8862
+g05217        0.9557
+g05110        1.2722
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          73               79.3478 %
+Incorrectly Classified Instances        19               20.6522 %
+Kappa statistic                          0.587 
+Mean absolute error                      0.3869
+Root mean squared error                  0.4226
+Relative absolute error                 77.7121 %
+Root relative squared error             84.71   %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.814    0.224    0.761      0.814    0.787      0.588    0.846     0.770     class1
+                 0.776    0.186    0.826      0.776    0.800      0.588    0.846     0.896     class2
+Weighted Avg.    0.793    0.204    0.796      0.793    0.794      0.588    0.846     0.837     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 35  8 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.846
+
+$pathFeatures
+ [1] "g05200" "g04010" "g05211" "g05146" "g04726" "g05412" "g04810" "g05203" "g04270" "g04330" "g04120" "g04728" "g05215" "g04144" "g05217"
+[16] "g05110"
+
+$geneFeatures
+NULL
+
+iter.................................. 4 
+iter= 4 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.0253
+g04920       -0.5727
+g04010       -1.0747
+g04910        -0.206
+g05211       -1.3674
+g04151       -0.1863
+g04145       -0.8006
+g04916       -0.3688
+g04722        0.4245
+g04350       -1.6604
+g04115       -0.5287
+g04810        -0.104
+g04310        0.7038
+g04621        -0.065
+g05218        1.4156
+g05034       -0.3364
+g04144        1.1604
+g05217       -0.8656
+Intercept    -0.1557
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.9751
+g04920         0.564
+g04010        0.3414
+g04910        0.8138
+g05211        0.2548
+g04151          0.83
+g04145        0.4491
+g04916        0.6915
+g04722        1.5288
+g04350        0.1901
+g04115        0.5894
+g04810        0.9012
+g04310        2.0214
+g04621        0.9371
+g05218        4.1188
+g05034        0.7143
+g04144        3.1913
+g05217        0.4208
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          64               69.5652 %
+Incorrectly Classified Instances        28               30.4348 %
+Kappa statistic                          0.3887
+Mean absolute error                      0.385 
+Root mean squared error                  0.4341
+Relative absolute error                 77.3247 %
+Root relative squared error             86.9955 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.674    0.286    0.674      0.674    0.674      0.389    0.806     0.764     class1
+                 0.714    0.326    0.714      0.714    0.714      0.389    0.806     0.856     class2
+Weighted Avg.    0.696    0.307    0.696      0.696    0.696      0.389    0.806     0.813     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29 14 |  a = class1
+ 14 35 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.806
+
+$pathFeatures
+ [1] "g05200" "g04920" "g04010" "g04910" "g05211" "g04151" "g04145" "g04916" "g04722" "g04350" "g04115" "g04810" "g04310" "g04621" "g05218"
+[16] "g05034" "g04144" "g05217"
+
+$geneFeatures
+NULL
+
+iter= 4 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.2813
+g04010       -0.8643
+g04810       -0.5528
+g04066        0.3379
+g04540        0.0837
+g05218        0.9994
+g05221       -0.5006
+g05120        -0.929
+g05032       -0.4181
+g05222       -0.0034
+g05215        0.1321
+g05164        1.1396
+g04144        0.1821
+Intercept     -0.096
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.2777
+g04010        0.4214
+g04810        0.5754
+g04066         1.402
+g04540        1.0873
+g05218        2.7168
+g05221        0.6062
+g05120         0.395
+g05032        0.6583
+g05222        0.9966
+g05215        1.1412
+g05164        3.1256
+g04144        1.1997
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          62               67.3913 %
+Incorrectly Classified Instances        30               32.6087 %
+Kappa statistic                          0.3375
+Mean absolute error                      0.3946
+Root mean squared error                  0.4357
+Relative absolute error                 79.2508 %
+Root relative squared error             87.3201 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.558    0.224    0.686      0.558    0.615      0.343    0.805     0.728     class1
+                 0.776    0.442    0.667      0.776    0.717      0.343    0.805     0.870     class2
+Weighted Avg.    0.674    0.340    0.676      0.674    0.669      0.343    0.805     0.804     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 24 19 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.805
+
+$pathFeatures
+ [1] "g05200" "g04010" "g04810" "g04066" "g04540" "g05218" "g05221" "g05120" "g05032" "g05222" "g05215" "g05164" "g04144"
+
+$geneFeatures
+NULL
+
+iter= 4 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.9964
+g04920       -0.8786
+g00230        -0.906
+g04010       -0.6136
+g05211       -0.9336
+g04151       -0.3385
+g04726       -0.7145
+g04722         0.433
+g04810         0.279
+g04066        1.4466
+g05161        0.1618
+g04340        -0.094
+g04270       -0.1841
+g04144        1.0147
+Intercept    -0.1679
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3692
+g04920        0.4153
+g00230        0.4041
+g04010        0.5414
+g05211        0.3931
+g04151        0.7129
+g04726        0.4894
+g04722        1.5419
+g04810        1.3218
+g04066        4.2489
+g05161        1.1756
+g04340        0.9103
+g04270        0.8319
+g04144        2.7584
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          73               79.3478 %
+Incorrectly Classified Instances        19               20.6522 %
+Kappa statistic                          0.5822
+Mean absolute error                      0.3705
+Root mean squared error                  0.399 
+Relative absolute error                 74.4073 %
+Root relative squared error             79.9765 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.721    0.143    0.816      0.721    0.765      0.586    0.885     0.861     class1
+                 0.857    0.279    0.778      0.857    0.816      0.586    0.885     0.904     class2
+Weighted Avg.    0.793    0.215    0.796      0.793    0.792      0.586    0.885     0.884     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 31 12 |  a = class1
+  7 42 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.885
+
+$pathFeatures
+ [1] "g05200" "g04920" "g00230" "g04010" "g05211" "g04151" "g04726" "g04722" "g04810" "g04066" "g05161" "g04340" "g04270" "g04144"
+
+$geneFeatures
+NULL
+
+iter= 4 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.5463
+g04360       -0.3344
+g00230       -0.7199
+g04010       -0.6726
+g04910       -0.3927
+g04510        -0.368
+g05211       -1.8549
+g04726       -1.1846
+g04350       -1.2755
+g05412        -0.462
+g04115       -0.0419
+g04810        0.3979
+g05203        0.9321
+g04621        -0.456
+g04066        1.2313
+g05161       -0.1018
+g05218        1.0612
+g05221       -0.5883
+g04340       -0.2707
+g05032       -1.0709
+g04727        1.2826
+g04144        1.3419
+Intercept    -0.2163
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.5791
+g04360        0.7158
+g00230        0.4868
+g04010        0.5104
+g04910        0.6752
+g04510        0.6921
+g05211        0.1565
+g04726        0.3059
+g04350        0.2793
+g05412          0.63
+g04115         0.959
+g04810        1.4887
+g05203        2.5397
+g04621        0.6338
+g04066        3.4255
+g05161        0.9032
+g05218        2.8898
+g05221        0.5553
+g04340        0.7629
+g05032        0.3427
+g04727        3.6061
+g04144        3.8263
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          73               79.3478 %
+Incorrectly Classified Instances        19               20.6522 %
+Kappa statistic                          0.5846
+Mean absolute error                      0.3357
+Root mean squared error                  0.3932
+Relative absolute error                 67.4289 %
+Root relative squared error             78.8131 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.184    0.786      0.767    0.776      0.585    0.866     0.831     class1
+                 0.816    0.233    0.800      0.816    0.808      0.585    0.866     0.886     class2
+Weighted Avg.    0.793    0.210    0.793      0.793    0.793      0.585    0.866     0.860     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 33 10 |  a = class1
+  9 40 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.866
+
+$pathFeatures
+ [1] "g05200" "g04360" "g00230" "g04010" "g04910" "g04510" "g05211" "g04726" "g04350" "g05412" "g04115" "g04810" "g05203" "g04621" "g04066"
+[16] "g05161" "g05218" "g05221" "g04340" "g05032" "g04727" "g04144"
+
+$geneFeatures
+NULL
+
+iter= 4 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.9351
+g04360       -0.7528
+g04920       -1.0441
+g04010       -0.3844
+g05211       -0.1054
+g04145       -0.6769
+g04726       -0.2317
+g04722       -0.0918
+g04350       -1.8613
+g05412        -1.159
+g04810        1.0161
+g05410        1.5457
+g04270       -0.0006
+g05034       -0.5334
+g05414        -0.783
+g04120       -0.2998
+g05222        0.1338
+g04144        1.2989
+Intercept    -0.2441
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3926
+g04360         0.471
+g04920         0.352
+g04010        0.6808
+g05211        0.8999
+g04145        0.5082
+g04726        0.7932
+g04722        0.9123
+g04350        0.1555
+g05412        0.3138
+g04810        2.7623
+g05410        4.6911
+g04270        0.9994
+g05034        0.5866
+g05414        0.4571
+g04120        0.7409
+g05222        1.1432
+g04144        3.6652
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          65               70.6522 %
+Incorrectly Classified Instances        27               29.3478 %
+Kappa statistic                          0.4063
+Mean absolute error                      0.3999
+Root mean squared error                  0.4502
+Relative absolute error                 80.3241 %
+Root relative squared error             90.2364 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.628    0.224    0.711      0.628    0.667      0.409    0.756     0.730     class1
+                 0.776    0.372    0.704      0.776    0.738      0.409    0.756     0.762     class2
+Weighted Avg.    0.707    0.303    0.707      0.707    0.705      0.409    0.756     0.747     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 27 16 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.756
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g04010" "g05211" "g04145" "g04726" "g04722" "g04350" "g05412" "g04810" "g05410" "g04270" "g05034" "g05414"
+[16] "g04120" "g05222" "g04144"
+
+$geneFeatures
+NULL
+
+iter.................................. 5 
+iter= 5 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.0066
+g04360       -0.8713
+g00230       -1.0359
+g04010       -0.0022
+g04510       -0.2355
+g05211       -0.0692
+g05146         0.339
+g04726       -1.1424
+g04620       -0.8261
+g05412       -1.0522
+g04810        1.3661
+g04622        0.4821
+g04310       -0.1098
+g04621        0.0061
+g05410        0.1529
+g04330       -0.7058
+g05120       -0.6991
+g05032        0.2238
+g04144        0.5975
+g05166        0.5197
+g05110        0.3923
+Intercept    -0.1634
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3654
+g04360        0.4184
+g00230        0.3549
+g04010        0.9978
+g04510        0.7902
+g05211        0.9331
+g05146        1.4036
+g04726         0.319
+g04620        0.4377
+g05412        0.3492
+g04810        3.9201
+g04622        1.6194
+g04310         0.896
+g04621        1.0062
+g05410        1.1652
+g04330        0.4937
+g05120         0.497
+g05032        1.2508
+g04144        1.8176
+g05166        1.6816
+g05110        1.4804
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          71               77.1739 %
+Incorrectly Classified Instances        21               22.8261 %
+Kappa statistic                          0.5382
+Mean absolute error                      0.3572
+Root mean squared error                  0.3987
+Relative absolute error                 71.7442 %
+Root relative squared error             79.9046 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.698    0.163    0.789      0.698    0.741      0.542    0.862     0.868     class1
+                 0.837    0.302    0.759      0.837    0.796      0.542    0.862     0.874     class2
+Weighted Avg.    0.772    0.237    0.773      0.772    0.770      0.542    0.862     0.871     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 30 13 |  a = class1
+  8 41 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.862
+
+$pathFeatures
+ [1] "g05200" "g04360" "g00230" "g04010" "g04510" "g05211" "g05146" "g04726" "g04620" "g05412" "g04810" "g04622" "g04310" "g04621" "g05410"
+[16] "g04330" "g05120" "g05032" "g04144" "g05166" "g05110"
+
+$geneFeatures
+NULL
+
+iter= 5 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.7563
+g04920       -0.6553
+g04010       -0.3775
+g04151       -0.0489
+g05160       -0.3822
+g04620       -0.0869
+g04914       -0.7283
+g05161        1.1651
+g04340       -0.2653
+g04270       -0.2575
+g04330       -0.8309
+g04728        0.1581
+g04144        0.5501
+Intercept    -0.1289
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.4694
+g04920        0.5193
+g04010        0.6856
+g04151        0.9523
+g05160        0.6823
+g04620        0.9168
+g04914        0.4827
+g05161        3.2064
+g04340        0.7669
+g04270         0.773
+g04330        0.4356
+g04728        1.1713
+g04144        1.7335
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          73               79.3478 %
+Incorrectly Classified Instances        19               20.6522 %
+Kappa statistic                          0.581 
+Mean absolute error                      0.3722
+Root mean squared error                  0.4098
+Relative absolute error                 74.7429 %
+Root relative squared error             82.1339 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.698    0.122    0.833      0.698    0.759      0.588    0.851     0.859     class1
+                 0.878    0.302    0.768      0.878    0.819      0.588    0.851     0.854     class2
+Weighted Avg.    0.793    0.218    0.798      0.793    0.791      0.588    0.851     0.856     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 30 13 |  a = class1
+  6 43 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.851
+
+$pathFeatures
+ [1] "g05200" "g04920" "g04010" "g04151" "g05160" "g04620" "g04914" "g05161" "g04340" "g04270" "g04330" "g04728" "g04144"
+
+$geneFeatures
+NULL
+
+iter= 5 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200          -0.9
+g04010       -0.6608
+g05211        -0.905
+g04916        0.3124
+g04722        0.1361
+g04350       -1.7902
+g04914       -1.4753
+g05412        -0.521
+g04115       -0.0163
+g04810         0.837
+g05203        1.5022
+g05221        0.3301
+g05034       -0.4819
+g05032       -0.0728
+g05222       -0.3171
+g04144        0.3997
+g05217       -0.5255
+Intercept    -0.2474
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.4066
+g04010        0.5164
+g05211        0.4045
+g04916        1.3667
+g04722        1.1458
+g04350        0.1669
+g04914        0.2287
+g05412        0.5939
+g04115        0.9838
+g04810        2.3094
+g05203        4.4917
+g05221        1.3912
+g05034        0.6176
+g05032        0.9298
+g05222        0.7282
+g04144        1.4914
+g05217        0.5913
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          68               73.913  %
+Incorrectly Classified Instances        24               26.087  %
+Kappa statistic                          0.4715
+Mean absolute error                      0.3883
+Root mean squared error                  0.4339
+Relative absolute error                 77.9776 %
+Root relative squared error             86.9612 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.651    0.184    0.757      0.651    0.700      0.476    0.803     0.785     class1
+                 0.816    0.349    0.727      0.816    0.769      0.476    0.803     0.822     class2
+Weighted Avg.    0.739    0.272    0.741      0.739    0.737      0.476    0.803     0.805     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28 15 |  a = class1
+  9 40 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.803
+
+$pathFeatures
+ [1] "g05200" "g04010" "g05211" "g04916" "g04722" "g04350" "g04914" "g05412" "g04115" "g04810" "g05203" "g05221" "g05034" "g05032" "g05222"
+[16] "g04144" "g05217"
+
+$geneFeatures
+NULL
+
+iter= 5 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.9632
+g04920       -0.9131
+g00230       -0.7152
+g04510       -0.0133
+g05146        0.7057
+g04145       -0.6383
+g04916       -0.2749
+g04722        0.5074
+g04350       -1.1422
+g05203        0.2604
+g04622        0.0601
+g05221       -0.2784
+g04270       -0.2948
+g04330       -0.9147
+g05120       -0.7967
+g05414        -0.591
+g04930        0.0331
+g04530       -0.0581
+g04727       -0.4328
+g05215        0.4266
+g05164        0.3147
+g04144        1.0286
+Intercept     -0.183
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3817
+g04920        0.4013
+g00230        0.4891
+g04510        0.9868
+g05146        2.0254
+g04145        0.5282
+g04916        0.7597
+g04722         1.661
+g04350        0.3191
+g05203        1.2975
+g04622        1.0619
+g05221         0.757
+g04270        0.7447
+g04330        0.4007
+g05120        0.4508
+g05414        0.5538
+g04930        1.0336
+g04530        0.9436
+g04727        0.6487
+g05215         1.532
+g05164        1.3699
+g04144        2.7972
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          68               73.913  %
+Incorrectly Classified Instances        24               26.087  %
+Kappa statistic                          0.473 
+Mean absolute error                      0.3739
+Root mean squared error                  0.4128
+Relative absolute error                 75.0858 %
+Root relative squared error             82.7436 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.674    0.204    0.744      0.674    0.707      0.475    0.840     0.824     class1
+                 0.796    0.326    0.736      0.796    0.765      0.475    0.840     0.876     class2
+Weighted Avg.    0.739    0.269    0.739      0.739    0.738      0.475    0.840     0.851     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29 14 |  a = class1
+ 10 39 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.84
+
+$pathFeatures
+ [1] "g05200" "g04920" "g00230" "g04510" "g05146" "g04145" "g04916" "g04722" "g04350" "g05203" "g04622" "g05221" "g04270" "g04330" "g05120"
+[16] "g05414" "g04930" "g04530" "g04727" "g05215" "g05164" "g04144"
+
+$geneFeatures
+NULL
+
+iter= 5 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.7635
+g00230       -0.8889
+g05146        0.0224
+g04145       -0.9759
+g05412       -0.9637
+g05203        0.7046
+g05161       -0.3791
+g04340       -1.3936
+g05414        0.4409
+g05222        0.6242
+g04727       -0.1208
+g05217        0.8051
+Intercept    -0.1483
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200         0.466
+g00230        0.4111
+g05146        1.0226
+g04145        0.3769
+g05412        0.3815
+g05203        2.0231
+g05161        0.6844
+g04340        0.2482
+g05414        1.5541
+g05222        1.8667
+g04727        0.8862
+g05217        2.2369
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          62               67.3913 %
+Incorrectly Classified Instances        30               32.6087 %
+Kappa statistic                          0.3337
+Mean absolute error                      0.402 
+Root mean squared error                  0.4388
+Relative absolute error                 80.7347 %
+Root relative squared error             87.948  %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.512    0.184    0.710      0.512    0.595      0.346    0.791     0.743     class1
+                 0.816    0.488    0.656      0.816    0.727      0.346    0.791     0.828     class2
+Weighted Avg.    0.674    0.346    0.681      0.674    0.665      0.346    0.791     0.788     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 22 21 |  a = class1
+  9 40 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.791
+
+$pathFeatures
+ [1] "g05200" "g00230" "g05146" "g04145" "g05412" "g05203" "g05161" "g04340" "g05414" "g05222" "g04727" "g05217"
+
+$geneFeatures
+NULL
+
+iter.................................. 6 
+iter= 6 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200        0.2015
+g04360       -0.7886
+g04920       -1.2661
+g04010       -0.5143
+g04910        -0.316
+g04510       -0.6846
+g05211       -1.2227
+g04145       -0.1126
+g04726        -1.499
+g04916       -0.4255
+g04350       -1.0476
+g05412       -1.3015
+g05203        0.0531
+g04310        3.5671
+g04621       -0.4841
+g04066        1.2639
+g05410        0.8684
+g04540       -0.3283
+g04144        1.0694
+g05217       -2.7788
+g05110       -0.9985
+Intercept     -0.233
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        1.2233
+g04360        0.4545
+g04920        0.2819
+g04010        0.5979
+g04910        0.7291
+g04510        0.5043
+g05211        0.2944
+g04145        0.8935
+g04726        0.2234
+g04916        0.6535
+g04350        0.3508
+g05412        0.2721
+g05203        1.0545
+g04310       35.4122
+g04621        0.6163
+g04066        3.5391
+g05410         2.383
+g04540        0.7201
+g04144        2.9137
+g05217        0.0621
+g05110        0.3684
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          72               78.2609 %
+Incorrectly Classified Instances        20               21.7391 %
+Kappa statistic                          0.5609
+Mean absolute error                      0.3588
+Root mean squared error                  0.4121
+Relative absolute error                 72.0517 %
+Root relative squared error             82.596  %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.721    0.163    0.795      0.721    0.756      0.563    0.840     0.812     class1
+                 0.837    0.279    0.774      0.837    0.804      0.563    0.840     0.838     class2
+Weighted Avg.    0.783    0.225    0.784      0.783    0.782      0.563    0.840     0.826     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 31 12 |  a = class1
+  8 41 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.84
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g04010" "g04910" "g04510" "g05211" "g04145" "g04726" "g04916" "g04350" "g05412" "g05203" "g04310" "g04621"
+[16] "g04066" "g05410" "g04540" "g04144" "g05217" "g05110"
+
+$geneFeatures
+NULL
+
+iter= 6 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.8097
+g04360        -0.079
+g04920       -0.7827
+g00230       -0.5216
+g04010       -0.7085
+g05211       -1.4706
+g05146        0.1977
+g04145       -0.9116
+g04726       -0.8388
+g04916       -0.3447
+g04722        0.5569
+g04350       -1.0581
+g05203        0.4273
+g04622        0.0111
+g04621       -0.3423
+g04066        1.2281
+g05218        0.5037
+g04728        0.2784
+g05215        0.2749
+g05164        0.1732
+Intercept    -0.1748
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200         0.445
+g04360         0.924
+g04920        0.4572
+g00230        0.5936
+g04010        0.4924
+g05211        0.2298
+g05146        1.2186
+g04145        0.4019
+g04726        0.4322
+g04916        0.7084
+g04722        1.7453
+g04350        0.3471
+g05203        1.5332
+g04622        1.0112
+g04621        0.7102
+g04066        3.4146
+g05218        1.6549
+g04728         1.321
+g05215        1.3164
+g05164        1.1891
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          72               78.2609 %
+Incorrectly Classified Instances        20               21.7391 %
+Kappa statistic                          0.5646
+Mean absolute error                      0.3708
+Root mean squared error                  0.4169
+Relative absolute error                 74.4675 %
+Root relative squared error             83.5533 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.791    0.224    0.756      0.791    0.773      0.565    0.838     0.834     class1
+                 0.776    0.209    0.809      0.776    0.792      0.565    0.838     0.841     class2
+Weighted Avg.    0.783    0.216    0.784      0.783    0.783      0.565    0.838     0.838     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 34  9 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.838
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04010" "g05211" "g05146" "g04145" "g04726" "g04916" "g04722" "g04350" "g05203" "g04622" "g04621"
+[16] "g04066" "g05218" "g04728" "g05215" "g05164"
+
+$geneFeatures
+NULL
+
+iter= 6 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.9364
+g04920       -1.1916
+g04010       -0.3467
+g04151        -0.341
+g04726        -0.643
+g04722       -0.0658
+g04350       -1.7707
+g05412       -0.8462
+g04810        1.3027
+g05203           0.3
+g04622        -0.122
+g04340       -0.1428
+g04330       -0.7076
+g04728         0.196
+g05164        0.2546
+g04144        0.3211
+Intercept    -0.1869
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200         0.392
+g04920        0.3037
+g04010         0.707
+g04151         0.711
+g04726        0.5257
+g04722        0.9363
+g04350        0.1702
+g05412         0.429
+g04810        3.6793
+g05203        1.3499
+g04622        0.8851
+g04340        0.8669
+g04330        0.4928
+g04728        1.2165
+g05164          1.29
+g04144        1.3787
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          66               71.7391 %
+Incorrectly Classified Instances        26               28.2609 %
+Kappa statistic                          0.434 
+Mean absolute error                      0.3821
+Root mean squared error                  0.4469
+Relative absolute error                 76.7338 %
+Root relative squared error             89.5779 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.721    0.286    0.689      0.721    0.705      0.434    0.766     0.707     class1
+                 0.714    0.279    0.745      0.714    0.729      0.434    0.766     0.808     class2
+Weighted Avg.    0.717    0.282    0.719      0.717    0.718      0.434    0.766     0.761     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 31 12 |  a = class1
+ 14 35 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.766
+
+$pathFeatures
+ [1] "g05200" "g04920" "g04010" "g04151" "g04726" "g04722" "g04350" "g05412" "g04810" "g05203" "g04622" "g04340" "g04330" "g04728" "g05164"
+[16] "g04144"
+
+$geneFeatures
+NULL
+
+iter= 6 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.5765
+g04920       -0.9691
+g04010       -0.6666
+g04722       -0.0193
+g04350       -1.5647
+g04810        0.5609
+g04622       -0.0198
+g05410       -0.2621
+g05218        0.9273
+g04330        -0.665
+g05032        0.4815
+g04530       -0.0824
+g04728        -0.401
+g05217        -0.316
+Intercept    -0.1927
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.5619
+g04920        0.3794
+g04010        0.5134
+g04722        0.9809
+g04350        0.2091
+g04810        1.7523
+g04622        0.9804
+g05410        0.7694
+g05218        2.5276
+g04330        0.5143
+g05032        1.6185
+g04530        0.9209
+g04728        0.6696
+g05217        0.7291
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          72               78.2609 %
+Incorrectly Classified Instances        20               21.7391 %
+Kappa statistic                          0.5571
+Mean absolute error                      0.3827
+Root mean squared error                  0.4195
+Relative absolute error                 76.85   %
+Root relative squared error             84.0808 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.651    0.102    0.848      0.651    0.737      0.571    0.841     0.817     class1
+                 0.898    0.349    0.746      0.898    0.815      0.571    0.841     0.843     class2
+Weighted Avg.    0.783    0.233    0.794      0.783    0.778      0.571    0.841     0.831     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28 15 |  a = class1
+  5 44 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.841
+
+$pathFeatures
+ [1] "g05200" "g04920" "g04010" "g04722" "g04350" "g04810" "g04622" "g05410" "g05218" "g04330" "g05032" "g04530" "g04728" "g05217"
+
+$geneFeatures
+NULL
+
+iter= 6 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.7363
+g04360       -0.3819
+g04010       -0.5409
+g04145       -0.9298
+g04726       -1.1302
+g04350       -1.1489
+g04622       -0.0022
+g04540        0.7029
+g05218        1.1349
+g04340       -0.6347
+g05120       -0.2035
+g05414       -0.3852
+g04727        0.8504
+g05215       -0.0581
+g05110       -0.1191
+Intercept    -0.1989
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.4789
+g04360        0.6825
+g04010        0.5822
+g04145        0.3946
+g04726         0.323
+g04350         0.317
+g04622        0.9978
+g04540        2.0197
+g05218         3.111
+g04340        0.5301
+g05120        0.8159
+g05414        0.6803
+g04727        2.3406
+g05215        0.9436
+g05110        0.8877
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          65               70.6522 %
+Incorrectly Classified Instances        27               29.3478 %
+Kappa statistic                          0.408 
+Mean absolute error                      0.3927
+Root mean squared error                  0.4456
+Relative absolute error                 78.867  %
+Root relative squared error             89.304  %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.651    0.245    0.700      0.651    0.675      0.409    0.773     0.749     class1
+                 0.755    0.349    0.712      0.755    0.733      0.409    0.773     0.780     class2
+Weighted Avg.    0.707    0.300    0.706      0.707    0.706      0.409    0.773     0.766     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28 15 |  a = class1
+ 12 37 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.773
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04010" "g04145" "g04726" "g04350" "g04622" "g04540" "g05218" "g04340" "g05120" "g05414" "g04727" "g05215" "g05110"
+
+$geneFeatures
+NULL
+
+iter.................................. 7 
+iter= 7 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200         -0.91
+g04360       -0.2183
+g04920       -1.0569
+g00230       -0.6291
+g04010       -1.0568
+g04910        0.1236
+g04510         0.214
+g05211       -0.3496
+g04726       -0.6874
+g04722        0.1048
+g04350       -1.4091
+g05412       -0.2743
+g05203       -0.0472
+g05218        1.6568
+g04340       -0.4538
+g05032        0.7212
+g04727        0.1111
+g05166        0.4299
+g05110       -0.3521
+Intercept    -0.2084
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.4025
+g04360        0.8039
+g04920        0.3475
+g00230        0.5331
+g04010        0.3476
+g04910        1.1316
+g04510        1.2386
+g05211         0.705
+g04726        0.5029
+g04722        1.1105
+g04350        0.2444
+g05412        0.7601
+g05203        0.9539
+g05218        5.2424
+g04340        0.6352
+g05032        2.0568
+g04727        1.1175
+g05166         1.537
+g05110        0.7032
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          70               76.087  %
+Incorrectly Classified Instances        22               23.913  %
+Kappa statistic                          0.5211
+Mean absolute error                      0.3795
+Root mean squared error                  0.4345
+Relative absolute error                 76.2138 %
+Root relative squared error             87.0776 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.245    0.733      0.767    0.750      0.522    0.801     0.765     class1
+                 0.755    0.233    0.787      0.755    0.771      0.522    0.801     0.796     class2
+Weighted Avg.    0.761    0.238    0.762      0.761    0.761      0.522    0.801     0.782     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 33 10 |  a = class1
+ 12 37 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.801
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04010" "g04910" "g04510" "g05211" "g04726" "g04722" "g04350" "g05412" "g05203" "g05218" "g04340"
+[16] "g05032" "g04727" "g05166" "g05110"
+
+$geneFeatures
+NULL
+
+iter= 7 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200        0.1399
+g04360       -0.5163
+g04920       -1.4712
+g00230       -1.0344
+g04510        0.0145
+g05211       -0.2302
+g05146        -0.018
+g04145       -0.9215
+g04726       -1.3796
+g04722        0.5486
+g04115        0.0881
+g04810       -0.3102
+g04622         0.673
+g05161       -0.1764
+g05218        0.5556
+g04330       -0.9344
+g05120       -1.5884
+g05032        0.0985
+g04728       -0.0961
+g05164       -0.4516
+g05217       -1.8181
+g05166        1.4703
+g05110        0.1226
+Intercept    -0.1641
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        1.1502
+g04360        0.5967
+g04920        0.2296
+g00230        0.3554
+g04510        1.0146
+g05211        0.7944
+g05146        0.9821
+g04145        0.3979
+g04726        0.2517
+g04722        1.7309
+g04115         1.092
+g04810        0.7333
+g04622        1.9601
+g05161        0.8382
+g05218        1.7431
+g04330        0.3928
+g05120        0.2043
+g05032        1.1035
+g04728        0.9084
+g05164        0.6366
+g05217        0.1623
+g05166        4.3506
+g05110        1.1304
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          69               75      %
+Incorrectly Classified Instances        23               25      %
+Kappa statistic                          0.4971
+Mean absolute error                      0.3829
+Root mean squared error                  0.4278
+Relative absolute error                 76.8934 %
+Root relative squared error             85.7507 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.721    0.224    0.738      0.721    0.729      0.497    0.804     0.737     class1
+                 0.776    0.279    0.760      0.776    0.768      0.497    0.804     0.857     class2
+Weighted Avg.    0.750    0.254    0.750      0.750    0.750      0.497    0.804     0.801     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 31 12 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.804
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04510" "g05211" "g05146" "g04145" "g04726" "g04722" "g04115" "g04810" "g04622" "g05161" "g05218"
+[16] "g04330" "g05120" "g05032" "g04728" "g05164" "g05217" "g05166" "g05110"
+
+$geneFeatures
+NULL
+
+iter= 7 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.6185
+g04360       -0.2953
+g00230       -0.6758
+g04151        0.0071
+g05160       -0.4864
+g04726       -0.6001
+g04916       -0.9096
+g04722        0.8377
+g04350       -1.4001
+g05412       -1.4561
+g04115       -0.1246
+g05203        0.5151
+g04310        1.4296
+g05410        1.9807
+g05414       -1.4852
+g04930       -0.2379
+g05222        0.9397
+Intercept    -0.1873
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.1982
+g04360        0.7443
+g00230        0.5088
+g04151        1.0072
+g05160        0.6148
+g04726        0.5487
+g04916        0.4027
+g04722         2.311
+g04350        0.2466
+g05412        0.2331
+g04115        0.8829
+g05203        1.6738
+g04310         4.177
+g05410        7.2476
+g05414        0.2265
+g04930        0.7883
+g05222        2.5591
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          65               70.6522 %
+Incorrectly Classified Instances        27               29.3478 %
+Kappa statistic                          0.413 
+Mean absolute error                      0.3881
+Root mean squared error                  0.451 
+Relative absolute error                 77.9511 %
+Root relative squared error             90.4002 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.721    0.306    0.674      0.721    0.697      0.414    0.761     0.723     class1
+                 0.694    0.279    0.739      0.694    0.716      0.414    0.761     0.756     class2
+Weighted Avg.    0.707    0.292    0.709      0.707    0.707      0.414    0.761     0.740     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 31 12 |  a = class1
+ 15 34 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.761
+
+$pathFeatures
+ [1] "g05200" "g04360" "g00230" "g04151" "g05160" "g04726" "g04916" "g04722" "g04350" "g05412" "g04115" "g05203" "g04310" "g05410" "g05414"
+[16] "g04930" "g05222"
+
+$geneFeatures
+NULL
+
+iter= 7 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.9168
+g04360       -0.1154
+g04920       -0.9435
+g00230       -0.1446
+g04010        -0.549
+g04910        0.1568
+g05211       -1.2422
+g04145       -1.1668
+g04726       -0.8324
+g04722        0.5019
+g04350       -0.8913
+g04066        1.1189
+g04540        0.3055
+g04270        0.1232
+g04330       -0.7247
+g05032       -0.2048
+g05414       -0.3588
+g05222        0.8345
+g04728        0.2994
+g05164        0.3024
+Intercept    -0.2065
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3998
+g04360         0.891
+g04920        0.3893
+g00230        0.8654
+g04010        0.5776
+g04910        1.1698
+g05211        0.2887
+g04145        0.3114
+g04726         0.435
+g04722        1.6518
+g04350        0.4101
+g04066        3.0614
+g04540        1.3573
+g04270        1.1311
+g04330        0.4845
+g05032        0.8148
+g05414        0.6985
+g05222        2.3038
+g04728         1.349
+g05164        1.3531
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          68               73.913  %
+Incorrectly Classified Instances        24               26.087  %
+Kappa statistic                          0.4685
+Mean absolute error                      0.3834
+Root mean squared error                  0.4284
+Relative absolute error                 76.9979 %
+Root relative squared error             85.8687 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.605    0.143    0.788      0.605    0.684      0.480    0.822     0.764     class1
+                 0.857    0.395    0.712      0.857    0.778      0.480    0.822     0.854     class2
+Weighted Avg.    0.739    0.277    0.747      0.739    0.734      0.480    0.822     0.812     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 26 17 |  a = class1
+  7 42 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.822
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04010" "g04910" "g05211" "g04145" "g04726" "g04722" "g04350" "g04066" "g04540" "g04270" "g04330"
+[16] "g05032" "g05414" "g05222" "g04728" "g05164"
+
+$geneFeatures
+NULL
+
+iter= 7 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200        -0.338
+g04920       -1.1488
+g04010       -0.8277
+g04910       -0.0895
+g05211       -2.0168
+g04145       -1.9811
+g04726       -1.8794
+g04620       -2.5336
+g04810       -0.8753
+g04066        1.4164
+g04540        0.6384
+g05218        1.1068
+g05215        0.0938
+g05164         1.622
+g04144        0.6372
+g05217       -1.3882
+g05166        1.3742
+Intercept    -0.2154
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.7132
+g04920         0.317
+g04010        0.4371
+g04910        0.9144
+g05211        0.1331
+g04145        0.1379
+g04726        0.1527
+g04620        0.0794
+g04810        0.4167
+g04066        4.1223
+g04540        1.8934
+g05218        3.0248
+g05215        1.0983
+g05164        5.0634
+g04144        1.8912
+g05217        0.2495
+g05166         3.952
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          66               71.7391 %
+Incorrectly Classified Instances        26               28.2609 %
+Kappa statistic                          0.4275
+Mean absolute error                      0.368 
+Root mean squared error                  0.4264
+Relative absolute error                 73.9142 %
+Root relative squared error             85.4651 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.628    0.204    0.730      0.628    0.675      0.431    0.804     0.787     class1
+                 0.796    0.372    0.709      0.796    0.750      0.431    0.804     0.808     class2
+Weighted Avg.    0.717    0.294    0.719      0.717    0.715      0.431    0.804     0.798     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 27 16 |  a = class1
+ 10 39 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.804
+
+$pathFeatures
+ [1] "g05200" "g04920" "g04010" "g04910" "g05211" "g04145" "g04726" "g04620" "g04810" "g04066" "g04540" "g05218" "g05215" "g05164" "g04144"
+[16] "g05217" "g05166"
+
+$geneFeatures
+NULL
+
+iter.................................. 8 
+iter= 8 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.5147
+g00230       -0.9045
+g05211       -0.9173
+g04151       -0.7594
+g04916        0.5283
+g04722        0.0931
+g04350       -1.2277
+g05412       -2.0781
+g04810        1.1038
+g04621        -0.436
+g04066        0.1875
+g05410        1.3633
+g05218        0.0176
+g05221        0.0856
+g04340       -1.3685
+g04330       -0.8938
+g05034       -0.1584
+g04930       -0.7439
+g04530       -0.3151
+g05215        0.6389
+g04144        0.5169
+g05166        0.5017
+Intercept     -0.225
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.5977
+g00230        0.4047
+g05211        0.3996
+g04151        0.4679
+g04916         1.696
+g04722        1.0976
+g04350         0.293
+g05412        0.1252
+g04810        3.0155
+g04621        0.6466
+g04066        1.2063
+g05410        3.9091
+g05218        1.0177
+g05221        1.0894
+g04340        0.2545
+g04330        0.4091
+g05034        0.8535
+g04930        0.4752
+g04530        0.7297
+g05215        1.8944
+g04144        1.6767
+g05166        1.6516
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          70               76.087  %
+Incorrectly Classified Instances        22               23.913  %
+Kappa statistic                          0.5211
+Mean absolute error                      0.3601
+Root mean squared error                  0.4076
+Relative absolute error                 72.3181 %
+Root relative squared error             81.6863 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.245    0.733      0.767    0.750      0.522    0.846     0.828     class1
+                 0.755    0.233    0.787      0.755    0.771      0.522    0.846     0.860     class2
+Weighted Avg.    0.761    0.238    0.762      0.761    0.761      0.522    0.846     0.845     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 33 10 |  a = class1
+ 12 37 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.846
+
+$pathFeatures
+ [1] "g05200" "g00230" "g05211" "g04151" "g04916" "g04722" "g04350" "g05412" "g04810" "g04621" "g04066" "g05410" "g05218" "g05221" "g04340"
+[16] "g04330" "g05034" "g04930" "g04530" "g05215" "g04144" "g05166"
+
+$geneFeatures
+NULL
+
+iter= 8 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.8557
+g04920       -0.8234
+g00230       -0.7306
+g04010        -0.773
+g05211       -0.7716
+g04726        -0.817
+g04722        0.5115
+g04350       -1.1309
+g04810        0.4759
+g05203       -0.0805
+g04066        0.5033
+g05410       -0.3955
+g05218        0.9929
+g05221       -0.7927
+g04270       -0.8646
+g04330       -0.8033
+g04144         0.915
+g05217       -0.6099
+g05166         0.508
+g05110        0.7112
+Intercept    -0.1568
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200         0.425
+g04920        0.4389
+g00230        0.4816
+g04010        0.4616
+g05211        0.4623
+g04726        0.4418
+g04722        1.6678
+g04350        0.3227
+g04810        1.6094
+g05203        0.9227
+g04066        1.6541
+g05410        0.6734
+g05218        2.6992
+g05221        0.4526
+g04270        0.4212
+g04330        0.4478
+g04144        2.4969
+g05217        0.5434
+g05166         1.662
+g05110        2.0365
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          70               76.087  %
+Incorrectly Classified Instances        22               23.913  %
+Kappa statistic                          0.5197
+Mean absolute error                      0.373 
+Root mean squared error                  0.4205
+Relative absolute error                 74.9144 %
+Root relative squared error             84.2766 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.744    0.224    0.744      0.744    0.744      0.520    0.830     0.751     class1
+                 0.776    0.256    0.776      0.776    0.776      0.520    0.830     0.869     class2
+Weighted Avg.    0.761    0.241    0.761      0.761    0.761      0.520    0.830     0.814     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 32 11 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.83
+
+$pathFeatures
+ [1] "g05200" "g04920" "g00230" "g04010" "g05211" "g04726" "g04722" "g04350" "g04810" "g05203" "g04066" "g05410" "g05218" "g05221" "g04270"
+[16] "g04330" "g04144" "g05217" "g05166" "g05110"
+
+$geneFeatures
+NULL
+
+iter= 8 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.6272
+g04360       -0.4166
+g00230       -0.7313
+g04010       -0.5313
+g04145         -0.63
+g04916       -1.0938
+g04620       -0.8525
+g04722        1.0676
+g04350       -1.1578
+g04310        0.3261
+g05410        0.2272
+g04330       -0.5133
+g05414       -0.3354
+g05166         0.995
+Intercept    -0.1889
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.5341
+g04360        0.6593
+g00230        0.4813
+g04010        0.5878
+g04145        0.5326
+g04916        0.3349
+g04620        0.4264
+g04722        2.9085
+g04350        0.3142
+g04310        1.3855
+g05410        1.2551
+g04330        0.5985
+g05414        0.7151
+g05166        2.7047
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          73               79.3478 %
+Incorrectly Classified Instances        19               20.6522 %
+Kappa statistic                          0.5834
+Mean absolute error                      0.3661
+Root mean squared error                  0.413 
+Relative absolute error                 73.5347 %
+Root relative squared error             82.7699 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.744    0.163    0.800      0.744    0.771      0.585    0.838     0.802     class1
+                 0.837    0.256    0.788      0.837    0.812      0.585    0.838     0.844     class2
+Weighted Avg.    0.793    0.213    0.794      0.793    0.793      0.585    0.838     0.824     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 32 11 |  a = class1
+  8 41 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.838
+
+$pathFeatures
+ [1] "g05200" "g04360" "g00230" "g04010" "g04145" "g04916" "g04620" "g04722" "g04350" "g04310" "g05410" "g04330" "g05414" "g05166"
+
+$geneFeatures
+NULL
+
+iter= 8 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.1255
+g04360       -0.7003
+g00230       -0.6998
+g04350       -1.4158
+g04914       -0.3623
+g05412       -0.8204
+g04810        1.7874
+g04622         -0.07
+g04066         0.342
+g04930       -0.2676
+g04728       -0.1037
+g05164       -0.3019
+Intercept    -0.1839
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3245
+g04360        0.4964
+g00230        0.4967
+g04350        0.2427
+g04914        0.6961
+g05412        0.4402
+g04810        5.9742
+g04622        0.9324
+g04066        1.4078
+g04930        0.7652
+g04728        0.9015
+g05164        0.7394
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          66               71.7391 %
+Incorrectly Classified Instances        26               28.2609 %
+Kappa statistic                          0.4372
+Mean absolute error                      0.3829
+Root mean squared error                  0.4318
+Relative absolute error                 76.9023 %
+Root relative squared error             86.5541 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.327    0.673      0.767    0.717      0.441    0.802     0.776     class1
+                 0.673    0.233    0.767      0.673    0.717      0.441    0.802     0.824     class2
+Weighted Avg.    0.717    0.276    0.724      0.717    0.717      0.441    0.802     0.802     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 33 10 |  a = class1
+ 16 33 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.802
+
+$pathFeatures
+ [1] "g05200" "g04360" "g00230" "g04350" "g04914" "g05412" "g04810" "g04622" "g04066" "g04930" "g04728" "g05164"
+
+$geneFeatures
+NULL
+
+iter= 8 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.0366
+g00230       -0.9909
+g04510       -0.2373
+g05160         0.076
+g05146       -0.1951
+g04722        0.3551
+g04810       -0.0292
+g05203       -0.0993
+g05161        0.1615
+g05218        0.9297
+g04340       -0.6201
+g05034       -0.3175
+g04930       -0.6471
+g05222       -0.0734
+g05164       -0.4752
+g05166        0.6845
+Intercept    -0.1075
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3547
+g00230        0.3712
+g04510        0.7887
+g05160         1.079
+g05146        0.8228
+g04722        1.4263
+g04810        0.9712
+g05203        0.9055
+g05161        1.1753
+g05218        2.5338
+g04340        0.5379
+g05034         0.728
+g04930        0.5236
+g05222        0.9293
+g05164        0.6218
+g05166        1.9828
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          72               78.2609 %
+Incorrectly Classified Instances        20               21.7391 %
+Kappa statistic                          0.5646
+Mean absolute error                      0.3863
+Root mean squared error                  0.4222
+Relative absolute error                 77.5736 %
+Root relative squared error             84.621  %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.791    0.224    0.756      0.791    0.773      0.565    0.839     0.808     class1
+                 0.776    0.209    0.809      0.776    0.792      0.565    0.839     0.856     class2
+Weighted Avg.    0.783    0.216    0.784      0.783    0.783      0.565    0.839     0.833     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 34  9 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.839
+
+$pathFeatures
+ [1] "g05200" "g00230" "g04510" "g05160" "g05146" "g04722" "g04810" "g05203" "g05161" "g05218" "g04340" "g05034" "g04930" "g05222" "g05164"
+[16] "g05166"
+
+$geneFeatures
+NULL
+
+iter.................................. 9 
+iter= 9 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.9382
+g04360       -0.6098
+g04920       -1.3981
+g00230       -0.7074
+g04010        -0.481
+g04910        0.2627
+g04151        0.0254
+g04145       -1.2697
+g04726       -1.2752
+g04916        0.9119
+g04722        0.2917
+g05412       -0.9974
+g04810        0.1461
+g05203         -0.03
+g04066        0.3502
+g04340       -1.2837
+g04144        0.6329
+g05166        0.4779
+g05110        0.7131
+Intercept    -0.2334
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3913
+g04360        0.5434
+g04920        0.2471
+g00230        0.4929
+g04010        0.6182
+g04910        1.3005
+g04151        1.0257
+g04145        0.2809
+g04726        0.2794
+g04916         2.489
+g04722        1.3388
+g05412        0.3688
+g04810        1.1573
+g05203        0.9704
+g04066        1.4193
+g04340         0.277
+g04144         1.883
+g05166        1.6127
+g05110        2.0403
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          66               71.7391 %
+Incorrectly Classified Instances        26               28.2609 %
+Kappa statistic                          0.4324
+Mean absolute error                      0.3786
+Root mean squared error                  0.4303
+Relative absolute error                 76.0448 %
+Root relative squared error             86.2372 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.698    0.265    0.698      0.698    0.698      0.432    0.790     0.774     class1
+                 0.735    0.302    0.735      0.735    0.735      0.432    0.790     0.824     class2
+Weighted Avg.    0.717    0.285    0.717      0.717    0.717      0.432    0.790     0.801     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 30 13 |  a = class1
+ 13 36 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.79
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04010" "g04910" "g04151" "g04145" "g04726" "g04916" "g04722" "g05412" "g04810" "g05203" "g04066"
+[16] "g04340" "g04144" "g05166" "g05110"
+
+$geneFeatures
+NULL
+
+iter= 9 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.8359
+g04360       -0.0907
+g04920       -0.8052
+g00230       -0.7701
+g04910        0.0723
+g04510       -0.3775
+g05211       -0.1907
+g04916        0.4073
+g05412       -0.9874
+g04810        0.5757
+g04066        0.9375
+g05410        0.2227
+g04530        -0.098
+g04728       -0.6242
+g05217       -0.6945
+Intercept    -0.1779
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.4335
+g04360        0.9133
+g04920         0.447
+g00230         0.463
+g04910         1.075
+g04510        0.6855
+g05211        0.8264
+g04916        1.5027
+g05412        0.3725
+g04810        1.7783
+g04066        2.5537
+g05410        1.2494
+g04530        0.9066
+g04728        0.5357
+g05217        0.4993
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          68               73.913  %
+Incorrectly Classified Instances        24               26.087  %
+Kappa statistic                          0.476 
+Mean absolute error                      0.3871
+Root mean squared error                  0.4318
+Relative absolute error                 77.744  %
+Root relative squared error             86.5371 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.721    0.245    0.721      0.721    0.721      0.476    0.797     0.767     class1
+                 0.755    0.279    0.755      0.755    0.755      0.476    0.797     0.811     class2
+Weighted Avg.    0.739    0.263    0.739      0.739    0.739      0.476    0.797     0.790     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 31 12 |  a = class1
+ 12 37 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.797
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04910" "g04510" "g05211" "g04916" "g05412" "g04810" "g04066" "g05410" "g04530" "g04728" "g05217"
+
+$geneFeatures
+NULL
+
+iter= 9 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.9165
+g04360       -0.6658
+g04920       -0.9639
+g04010       -0.3021
+g04510       -0.4497
+g05211       -1.5195
+g04151        0.2078
+g04145       -1.2359
+g04726       -1.1754
+g04620       -0.3321
+g04722        0.1304
+g04810        0.9155
+g04310       -0.0189
+g04066        1.8099
+g05221       -0.0413
+g04330       -0.6147
+g04530       -0.1605
+g04144         0.782
+g05110        0.8155
+Intercept    -0.1171
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3999
+g04360        0.5139
+g04920        0.3814
+g04010        0.7393
+g04510        0.6378
+g05211        0.2188
+g04151        1.2309
+g04145        0.2906
+g04726        0.3087
+g04620        0.7174
+g04722        1.1392
+g04810         2.498
+g04310        0.9813
+g04066          6.11
+g05221        0.9595
+g04330        0.5408
+g04530        0.8517
+g04144        2.1857
+g05110        2.2603
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          69               75      %
+Incorrectly Classified Instances        23               25      %
+Kappa statistic                          0.5014
+Mean absolute error                      0.3632
+Root mean squared error                  0.4033
+Relative absolute error                 72.9414 %
+Root relative squared error             80.8372 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.791    0.286    0.708      0.791    0.747      0.504    0.865     0.849     class1
+                 0.714    0.209    0.795      0.714    0.753      0.504    0.865     0.891     class2
+Weighted Avg.    0.750    0.245    0.755      0.750    0.750      0.504    0.865     0.871     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 34  9 |  a = class1
+ 14 35 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.865
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g04010" "g04510" "g05211" "g04151" "g04145" "g04726" "g04620" "g04722" "g04810" "g04310" "g04066" "g05221"
+[16] "g04330" "g04530" "g04144" "g05110"
+
+$geneFeatures
+NULL
+
+iter= 9 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.9951
+g04360       -0.6321
+g04920       -0.7356
+g00230       -0.9567
+g04722        0.4056
+g04914       -0.1928
+g05412       -1.0708
+g04810        0.8267
+g04622        0.2062
+g04540         0.114
+g04270       -0.4182
+g05120       -0.6576
+g05414       -0.2433
+g04930        0.2208
+g05164        0.0554
+g04144        0.8016
+Intercept    -0.1859
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3697
+g04360        0.5315
+g04920        0.4792
+g00230        0.3842
+g04722        1.5003
+g04914        0.8246
+g05412        0.3427
+g04810        2.2858
+g04622         1.229
+g04540        1.1208
+g04270        0.6582
+g05120        0.5181
+g05414        0.7841
+g04930         1.247
+g05164        1.0569
+g04144        2.2291
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          69               75      %
+Incorrectly Classified Instances        23               25      %
+Kappa statistic                          0.4943
+Mean absolute error                      0.3826
+Root mean squared error                  0.4243
+Relative absolute error                 76.8387 %
+Root relative squared error             85.0489 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.674    0.184    0.763      0.674    0.716      0.497    0.820     0.786     class1
+                 0.816    0.326    0.741      0.816    0.777      0.497    0.820     0.845     class2
+Weighted Avg.    0.750    0.259    0.751      0.750    0.748      0.497    0.820     0.817     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29 14 |  a = class1
+  9 40 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.82
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04722" "g04914" "g05412" "g04810" "g04622" "g04540" "g04270" "g05120" "g05414" "g04930" "g05164"
+[16] "g04144"
+
+$geneFeatures
+NULL
+
+iter= 9 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.2865
+g04010       -0.8095
+g04510       -0.3833
+g04350       -1.2632
+g05412       -0.2652
+g05203        0.0895
+g04622        0.2125
+g04310        2.0964
+g04066       -0.1671
+g05161       -0.1842
+g05218        1.3883
+g04340       -0.9675
+g04330       -0.5975
+g05414       -0.1942
+g05222        0.2359
+g05164        0.2268
+g05217       -0.5814
+g05110        -0.575
+Intercept    -0.2306
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.2762
+g04010        0.4451
+g04510        0.6816
+g04350        0.2827
+g05412         0.767
+g05203        1.0937
+g04622        1.2367
+g04310        8.1367
+g04066        0.8461
+g05161        0.8318
+g05218        4.0082
+g04340          0.38
+g04330        0.5502
+g05414        0.8235
+g05222        1.2661
+g05164        1.2545
+g05217        0.5591
+g05110        0.5627
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          65               70.6522 %
+Incorrectly Classified Instances        27               29.3478 %
+Kappa statistic                          0.4097
+Mean absolute error                      0.3818
+Root mean squared error                  0.4311
+Relative absolute error                 76.6737 %
+Root relative squared error             86.3987 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.674    0.265    0.690      0.674    0.682      0.410    0.798     0.749     class1
+                 0.735    0.326    0.720      0.735    0.727      0.410    0.798     0.846     class2
+Weighted Avg.    0.707    0.297    0.706      0.707    0.706      0.410    0.798     0.801     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29 14 |  a = class1
+ 13 36 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.798
+
+$pathFeatures
+ [1] "g05200" "g04010" "g04510" "g04350" "g05412" "g05203" "g04622" "g04310" "g04066" "g05161" "g05218" "g04340" "g04330" "g05414" "g05222"
+[16] "g05164" "g05217" "g05110"
+
+$geneFeatures
+NULL
+
+iter.................................. 10 
+iter= 10 Folds= 1 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.2588
+g04920       -1.0108
+g00230       -0.5867
+g04910        0.3866
+g05211        0.1415
+g04151        0.2408
+g05146        0.1684
+g04145       -0.6577
+g04726       -1.2975
+g04722       -0.2437
+g04350       -1.1839
+g04914       -0.5191
+g05412       -1.4563
+g04810        0.8374
+g04540        0.5892
+g05218        0.6444
+g05221        0.7858
+g05414       -0.0406
+Intercept    -0.2455
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200         0.284
+g04920        0.3639
+g00230        0.5561
+g04910        1.4719
+g05211         1.152
+g04151        1.2723
+g05146        1.1834
+g04145        0.5181
+g04726        0.2732
+g04722        0.7837
+g04350        0.3061
+g04914         0.595
+g05412        0.2331
+g04810        2.3103
+g04540        1.8025
+g05218        1.9049
+g05221        2.1941
+g05414        0.9602
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          67               72.8261 %
+Incorrectly Classified Instances        25               27.1739 %
+Kappa statistic                          0.4519
+Mean absolute error                      0.3559
+Root mean squared error                  0.4163
+Relative absolute error                 71.4694 %
+Root relative squared error             83.4281 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.674    0.224    0.725      0.674    0.699      0.453    0.825     0.836     class1
+                 0.776    0.326    0.731      0.776    0.752      0.453    0.825     0.811     class2
+Weighted Avg.    0.728    0.278    0.728      0.728    0.727      0.453    0.825     0.823     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29 14 |  a = class1
+ 11 38 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.825
+
+$pathFeatures
+ [1] "g05200" "g04920" "g00230" "g04910" "g05211" "g04151" "g05146" "g04145" "g04726" "g04722" "g04350" "g04914" "g05412" "g04810" "g04540"
+[16] "g05218" "g05221" "g05414"
+
+$geneFeatures
+NULL
+
+iter= 10 Folds= 2 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.5364
+g04360       -0.6301
+g04920         -1.61
+g04510        0.3252
+g05146       -0.0041
+g04350       -1.5175
+g05412       -0.6652
+g05203        0.2585
+g05221        0.0025
+g04270       -0.3628
+g04330       -0.3977
+g05120        -0.428
+g04930        0.3453
+g04144        0.7995
+Intercept    -0.1794
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.5849
+g04360        0.5325
+g04920        0.1999
+g04510        1.3843
+g05146        0.9959
+g04350        0.2193
+g05412        0.5142
+g05203         1.295
+g05221        1.0025
+g04270        0.6957
+g04330        0.6719
+g05120        0.6518
+g04930        1.4124
+g04144        2.2244
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          70               76.087  %
+Incorrectly Classified Instances        22               23.913  %
+Kappa statistic                          0.5211
+Mean absolute error                      0.3732
+Root mean squared error                  0.4148
+Relative absolute error                 74.943  %
+Root relative squared error             83.1328 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.767    0.245    0.733      0.767    0.750      0.522    0.841     0.826     class1
+                 0.755    0.233    0.787      0.755    0.771      0.522    0.841     0.866     class2
+Weighted Avg.    0.761    0.238    0.762      0.761    0.761      0.522    0.841     0.847     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 33 10 |  a = class1
+ 12 37 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.841
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g04510" "g05146" "g04350" "g05412" "g05203" "g05221" "g04270" "g04330" "g05120" "g04930" "g04144"
+
+$geneFeatures
+NULL
+
+iter= 10 Folds= 3 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -1.0242
+g04360       -0.9886
+g04920       -0.7995
+g04010       -0.4885
+g04510       -0.5322
+g05211       -0.9858
+g04151       -0.0866
+g05146        1.1193
+g04145        -1.155
+g04726       -1.0073
+g04914       -1.0367
+g05412       -1.6652
+g04810        0.9233
+g04622       -0.5193
+g04066        0.7999
+g05410        0.7116
+g04540        0.4029
+g05218        0.8505
+g04340       -1.3143
+g04270       -0.1026
+g04330       -1.0906
+g05034        0.0465
+g05032        0.4735
+g05215        0.4618
+g04144        1.0288
+g05217         0.916
+Intercept    -0.2178
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.3591
+g04360        0.3721
+g04920        0.4496
+g04010        0.6135
+g04510        0.5873
+g05211        0.3731
+g04151         0.917
+g05146        3.0628
+g04145        0.3151
+g04726        0.3652
+g04914        0.3546
+g05412        0.1892
+g04810        2.5176
+g04622        0.5949
+g04066        2.2253
+g05410        2.0372
+g04540        1.4962
+g05218        2.3409
+g04340        0.2687
+g04270        0.9024
+g04330         0.336
+g05034        1.0476
+g05032        1.6056
+g05215        1.5869
+g04144        2.7976
+g05217        2.4992
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          75               81.5217 %
+Incorrectly Classified Instances        17               18.4783 %
+Kappa statistic                          0.6283
+Mean absolute error                      0.3551
+Root mean squared error                  0.4094
+Relative absolute error                 71.3105 %
+Root relative squared error             82.0529 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.791    0.163    0.810      0.791    0.800      0.628    0.841     0.818     class1
+                 0.837    0.209    0.820      0.837    0.828      0.628    0.841     0.842     class2
+Weighted Avg.    0.815    0.188    0.815      0.815    0.815      0.628    0.841     0.831     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 34  9 |  a = class1
+  8 41 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.841
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g04010" "g04510" "g05211" "g04151" "g05146" "g04145" "g04726" "g04914" "g05412" "g04810" "g04622" "g04066"
+[16] "g05410" "g04540" "g05218" "g04340" "g04270" "g04330" "g05034" "g05032" "g05215" "g04144" "g05217"
+
+$geneFeatures
+NULL
+
+iter= 10 Folds= 4 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.0447
+g04360       -0.8656
+g05211       -0.2271
+g04151       -0.5568
+g04621       -0.7263
+g05034        0.2694
+g05222        0.1198
+g04728        -0.829
+g05164       -0.1954
+g05217       -1.1151
+g05166        0.7988
+Intercept    -0.1831
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200        0.9563
+g04360        0.4208
+g05211        0.7968
+g04151         0.573
+g04621        0.4837
+g05034        1.3092
+g05222        1.1272
+g04728        0.4365
+g05164        0.8225
+g05217        0.3279
+g05166        2.2228
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          70               76.087  %
+Incorrectly Classified Instances        22               23.913  %
+Kappa statistic                          0.5156
+Mean absolute error                      0.4074
+Root mean squared error                  0.4383
+Relative absolute error                 81.8277 %
+Root relative squared error             87.8472 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.674    0.163    0.784      0.674    0.725      0.520    0.807     0.784     class1
+                 0.837    0.326    0.745      0.837    0.788      0.520    0.807     0.819     class2
+Weighted Avg.    0.761    0.250    0.763      0.761    0.759      0.520    0.807     0.803     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29 14 |  a = class1
+  8 41 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.807
+
+$pathFeatures
+ [1] "g05200" "g04360" "g05211" "g04151" "g04621" "g05034" "g05222" "g04728" "g05164" "g05217" "g05166"
+
+$geneFeatures
+NULL
+
+iter= 10 Folds= 5 
+$model
+$model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      class1
+====================
+g05200       -0.3872
+g04360       -0.5512
+g04920        -1.506
+g00230        -0.881
+g04010       -0.1852
+g04145       -0.8945
+g04916          0.25
+g04722         0.441
+g04350       -1.0905
+g05412       -0.3361
+g04622        0.4417
+g04340       -0.9584
+g04330       -0.5225
+g05120       -1.4469
+g05032       -0.2194
+g05215        0.0125
+g05164        0.6398
+g04144        0.9904
+Intercept    -0.1527
+
+
+Odds Ratios...
+               Class
+Variable      class1
+====================
+g05200         0.679
+g04360        0.5763
+g04920        0.2218
+g00230        0.4144
+g04010        0.8309
+g04145        0.4088
+g04916         1.284
+g04722        1.5542
+g04350         0.336
+g05412        0.7145
+g04622        1.5553
+g04340        0.3835
+g04330        0.5931
+g05120        0.2353
+g05032         0.803
+g05215        1.0126
+g05164         1.896
+g04144        2.6924
+
+
+$eTestSet
+
+=== Summary ===
+
+Correctly Classified Instances          62               67.3913 %
+Incorrectly Classified Instances        30               32.6087 %
+Kappa statistic                          0.3524
+Mean absolute error                      0.3809
+Root mean squared error                  0.4389
+Relative absolute error                 76.5033 %
+Root relative squared error             87.9731 %
+Total Number of Instances               92     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.744    0.388    0.627      0.744    0.681      0.358    0.783     0.764     class1
+                 0.612    0.256    0.732      0.612    0.667      0.358    0.783     0.822     class2
+Weighted Avg.    0.674    0.317    0.683      0.674    0.673      0.358    0.783     0.795     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 32 11 |  a = class1
+ 19 30 |  b = class2
+
+attr(,"class")
+[1] "fitModel"
+
+$AUC
+[1] 0.783
+
+$pathFeatures
+ [1] "g05200" "g04360" "g04920" "g00230" "g04010" "g04145" "g04916" "g04722" "g04350" "g05412" "g04622" "g04340" "g04330" "g05120" "g05032"
+[16] "g05215" "g05164" "g04144"
+
+$geneFeatures
+NULL
+

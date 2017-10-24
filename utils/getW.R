@@ -6,7 +6,7 @@ getW <- function(G, gene_weight, x, datapath, EdgeWeight=FALSE, AntiCorr=FALSE) 
   
   len = length(gene_weight)
   if(len > 1) {
-    intersect_genes <- Reduce(intersect, lapply(gene_weight, function(x) substring(x,2)))
+    intersect_genes <- Reduce(intersect, lapply(gene_weight, function(x) substring(names(x),2))) # 16454 genes
     
     if(!EdgeWeight) {
       if(!AntiCorr) {
@@ -15,10 +15,7 @@ getW <- function(G, gene_weight, x, datapath, EdgeWeight=FALSE, AntiCorr=FALSE) 
         if(file.exists(fname)) {
           load(fname)
         } else {
-          print('file not exist!')
-          W <- as.matrix(get.adjacency(G))
-          print(sum(W))
-          print(length(intersect_genes))
+          W <- as.matrix(get.adjacency(G)) # 81750 edges
           for(i in 1:length(intersect_genes)){
             idx=which(paste("g",intersect_genes[i],sep="")==rownames(W))
             if(length(idx)>0) {
@@ -26,7 +23,7 @@ getW <- function(G, gene_weight, x, datapath, EdgeWeight=FALSE, AntiCorr=FALSE) 
               W[paste("m",intersect_genes[i],sep=""),paste("g",intersect_genes[i],sep="")] <- 1
             }
           }
-          save(W, file=fname)
+          save(W, file=fname) # added 6690 edges
         }
       } else if(AntiCorr) {
         
@@ -52,7 +49,7 @@ getW <- function(G, gene_weight, x, datapath, EdgeWeight=FALSE, AntiCorr=FALSE) 
               }
             }
           }
-          save(W, file=fname)
+          save(W, file=fname) # added 5694 edges (removed 996 edges)
         }
       }
     }
